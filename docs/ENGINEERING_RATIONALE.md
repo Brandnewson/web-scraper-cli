@@ -69,3 +69,16 @@ This file records *why* we chose specific tools, libraries, patterns, and algori
   - Preserves future path for phrase/proximity features without rebuild.
 - **Regex tokenization (`r"[^a-z0-9]+"`)**
   - Transparent, deterministic baseline aligned with coursework constraints.
+
+## BM25F Scoring Choices
+
+- **Single-term BM25F scorer implemented before full retrieval pipeline**
+  - Isolates ranking correctness before introducing merge/routing complexity.
+- **All ranking parameters read from index metadata**
+  - Keeps scoring behavior data-driven and avoids hidden query-time constants.
+- **Explicit zero-return edge behavior**
+  - Makes scorer output predictable for missing/invalid inputs and simplifies
+    downstream composition in later phases.
+- **BM25 score reasoning**
+  - We set a score of 1.5 for K1, it lets us control how quickly the score saturates with term frequency. 
+    Higher values allow more influence from term frequency, while lower values reduce it. Commonly set around 1.2 to 2.0 in practice. I set it at 1.5 because it's the canonical default baseline for now.

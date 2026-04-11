@@ -134,6 +134,11 @@ def advance_with_skips(
     return current_ptr
 
 
+def _posting_list_length_key(pair: tuple[list[dict], list[tuple[int, int]]]) -> int:
+    """Return posting-list length for sorting paired posting/skip lists."""
+    return len(pair[0])
+
+
 def daat_and_merge(posting_lists: list[list[dict]], skip_lists: list[list[tuple[int, int]]]) -> list[int]:
     """Intersect posting lists with document-at-a-time AND semantics."""
     if not posting_lists:
@@ -141,7 +146,7 @@ def daat_and_merge(posting_lists: list[list[dict]], skip_lists: list[list[tuple[
 
     paired = sorted(
         zip(posting_lists, skip_lists, strict=True),
-        key=lambda pair: len(pair[0]),
+        key=_posting_list_length_key,
     )
     sorted_posting_lists = [pair[0] for pair in paired]
     sorted_skip_lists = [pair[1] for pair in paired]

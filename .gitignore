@@ -38,3 +38,5 @@ Thumbs.db
 # Coursework-generated data
 data/index.json
 
+# Local progress notes
+docs/WORKLOG.md

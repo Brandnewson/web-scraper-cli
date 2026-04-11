@@ -59,3 +59,13 @@ This file records *why* we chose specific tools, libraries, patterns, and algori
   - Validates timing instrumentation and reporting format early.
   - Defers algorithm-comparison benchmarks (skip pointers, BM25F ablation) to relevant phases.
 
+## Indexer Design Choices
+
+- **One posting per `(term, doc_id)` with nested field stats**
+  - Keeps DAAT-ready posting lists with unique doc IDs.
+  - Avoids query-time deduplication across fields.
+- **Per-field position storage**
+  - Meets coursework requirement for positional statistics.
+  - Preserves future path for phrase/proximity features without rebuild.
+- **Regex tokenization (`r"[^a-z0-9]+"`)**
+  - Transparent, deterministic baseline aligned with coursework constraints.

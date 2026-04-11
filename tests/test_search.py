@@ -3,6 +3,8 @@
 from __future__ import annotations
 
 import math
+import statistics
+import time
 
 import src.search as search
 
@@ -28,6 +30,7 @@ REQUIRED_OBJECTIVES = {
     "spell_suggest_max_distance",
     "spell_did_you_mean_format",
     "spell_did_you_mean_no_change",
+    "skip_pointer_speedup_benchmark",
 }
 
 REQUIRED_TEST_NAMES = {
@@ -52,6 +55,7 @@ REQUIRED_TEST_NAMES = {
     "test_suggest_max_dist",
     "test_did_you_mean_format",
     "test_did_you_mean_no_replacement_returns_none",
+    "test_skip_pointer_vs_linear",
 }
 
 OBJECTIVE_TRACE = {
@@ -76,6 +80,7 @@ OBJECTIVE_TRACE = {
     "spell_suggest_max_distance": {"test_suggest_max_dist"},
     "spell_did_you_mean_format": {"test_did_you_mean_format"},
     "spell_did_you_mean_no_change": {"test_did_you_mean_no_replacement_returns_none"},
+    "skip_pointer_speedup_benchmark": {"test_skip_pointer_vs_linear"},
 }
 
 
@@ -242,6 +247,38 @@ def _make_postings(doc_ids: list[int]) -> list[dict]:
     ]
 
 
+def _advance_linear(postings: list[dict], ptr: int, target: int) -> int:
+    """Advance pointer linearly to first doc_id >= target."""
+    current_ptr = ptr
+    while current_ptr < len(postings) and postings[current_ptr]["doc_id"] < target:
+        current_ptr += 1
+
+    if current_ptr >= len(postings):
+        raise StopIteration
+    return current_ptr
+
+
+def _time_linear_advance(postings: list[dict], target: int, iterations: int) -> float:
+    """Measure linear pointer-advance time in milliseconds."""
+    start = time.perf_counter()
+    for _ in range(iterations):
+        _advance_linear(postings, ptr=0, target=target)
+    return (time.perf_counter() - start) * 1000.0
+
+
+def _time_skip_advance(
+    postings: list[dict],
+    skips: list[tuple[int, int]],
+    target: int,
+    iterations: int,
+) -> float:
+    """Measure skip-pointer pointer-advance time in milliseconds."""
+    start = time.perf_counter()
+    for _ in range(iterations):
+        search.advance_with_skips(postings, skips, ptr=0, target=target)
+    return (time.perf_counter() - start) * 1000.0
+
+
 def test_skip_pointer_build() -> None:
     """Skip pointers are emitted at sqrt-spaced indices."""
     postings = _make_postings(list(range(100)))
@@ -312,6 +349,40 @@ def test_daat_no_results() -> None:
 def test_daat_empty_input_lists_returns_empty() -> None:
     """DAAT AND returns empty for empty input list collection."""
     assert search.daat_and_merge([], []) == []
+
+
+def test_skip_pointer_vs_linear() -> None:
+    """Skip-pointer advance beats linear advance on a 10,000-posting synthetic list."""
+    postings = _make_postings(list(range(0, 20_000, 2)))
+    skips = search.build_skip_pointers(postings)
+    target = postings[-2]["doc_id"]
+    iterations = 1_000
+    trial_count = 5
+
+    linear_trials = [
+        _time_linear_advance(postings, target=target, iterations=iterations)
+        for _ in range(trial_count)
+    ]
+    skip_trials = [
+        _time_skip_advance(postings, skips, target=target, iterations=iterations)
+        for _ in range(trial_count)
+    ]
+
+    median_linear_ms = statistics.median(linear_trials)
+    median_skip_ms = statistics.median(skip_trials)
+    speedup = median_linear_ms / median_skip_ms
+
+    print(
+        "\n| benchmark_name | configuration | result | baseline_result | delta | units | run_count |"
+    )
+    print("|---|---|---|---|---|---|---|")
+    print(
+        "| skip_pointer_vs_linear "
+        "| N=10000,target_near_tail,iterations=1000,metric=median_over_5 "
+        f"| {median_skip_ms:.3f} | {median_linear_ms:.3f} | {speedup:.2f}x | ms | {trial_count} |"
+    )
+
+    assert median_skip_ms < median_linear_ms
 
 
 def test_levenshtein_exact() -> None:

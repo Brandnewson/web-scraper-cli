@@ -90,6 +90,15 @@ This file records *why* we chose specific tools, libraries, patterns, and algori
 - **No-replacement returns `None`**
   - Keeps correction logic explicit: only emit suggestion text when at least one token
     is actually improved.
+
+## CLI Orchestration Choices
+
+- **Function-level REPL testing over subprocess testing**
+  - Faster and deterministic for command dispatch/output behavior validation.
+- **Persistence stays in `main.py` for this phase**
+  - Keeps phase scope focused on wiring while avoiding premature module splitting.
+- **Aggregated `print <word>` output per document**
+  - Maintains one-line-per-doc readability while preserving field provenance.
 - **BM25 score reasoning**
   - We set a score of 1.5 for K1, it lets us control how quickly the score saturates with term frequency. 
     Higher values allow more influence from term frequency, while lower values reduce it. Commonly set around 1.2 to 2.0 in practice. I set it at 1.5 because it's the canonical default baseline for now.

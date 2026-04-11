@@ -79,6 +79,17 @@ This file records *why* we chose specific tools, libraries, patterns, and algori
 - **Explicit zero-return edge behavior**
   - Makes scorer output predictable for missing/invalid inputs and simplifies
     downstream composition in later phases.
+
+## Spell-Correction Choices
+
+- **Damerau-style transposition in edit distance**
+  - Treats adjacent transposition typos (e.g., `teh` -> `the`) as one edit, improving
+    correction quality for common typing errors.
+- **Alphabetical tie-break for equal edit distance**
+  - Ensures deterministic suggestions and stable tests.
+- **No-replacement returns `None`**
+  - Keeps correction logic explicit: only emit suggestion text when at least one token
+    is actually improved.
 - **BM25 score reasoning**
   - We set a score of 1.5 for K1, it lets us control how quickly the score saturates with term frequency. 
     Higher values allow more influence from term frequency, while lower values reduce it. Commonly set around 1.2 to 2.0 in practice. I set it at 1.5 because it's the canonical default baseline for now.

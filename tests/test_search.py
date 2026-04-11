@@ -20,6 +20,14 @@ REQUIRED_OBJECTIVES = {
     "daat_empty_input_behavior",
     "skip_pointer_empty_input_behavior",
     "skip_pointer_exhaust_behavior",
+    "spell_distance_exact_match",
+    "spell_distance_single_edit",
+    "spell_distance_transposition",
+    "spell_suggest_close_match",
+    "spell_suggest_no_match",
+    "spell_suggest_max_distance",
+    "spell_did_you_mean_format",
+    "spell_did_you_mean_no_change",
 }
 
 REQUIRED_TEST_NAMES = {
@@ -36,6 +44,14 @@ REQUIRED_TEST_NAMES = {
     "test_skip_pointer_build_empty_list",
     "test_advance_with_skips_exhausts_raises_stopiteration",
     "test_daat_empty_input_lists_returns_empty",
+    "test_levenshtein_exact",
+    "test_levenshtein_one_edit",
+    "test_levenshtein_transpose",
+    "test_suggest_finds_close",
+    "test_suggest_no_match",
+    "test_suggest_max_dist",
+    "test_did_you_mean_format",
+    "test_did_you_mean_no_replacement_returns_none",
 }
 
 OBJECTIVE_TRACE = {
@@ -52,6 +68,14 @@ OBJECTIVE_TRACE = {
     "daat_empty_input_behavior": {"test_daat_empty_input_lists_returns_empty"},
     "skip_pointer_empty_input_behavior": {"test_skip_pointer_build_empty_list"},
     "skip_pointer_exhaust_behavior": {"test_advance_with_skips_exhausts_raises_stopiteration"},
+    "spell_distance_exact_match": {"test_levenshtein_exact"},
+    "spell_distance_single_edit": {"test_levenshtein_one_edit"},
+    "spell_distance_transposition": {"test_levenshtein_transpose"},
+    "spell_suggest_close_match": {"test_suggest_finds_close"},
+    "spell_suggest_no_match": {"test_suggest_no_match"},
+    "spell_suggest_max_distance": {"test_suggest_max_dist"},
+    "spell_did_you_mean_format": {"test_did_you_mean_format"},
+    "spell_did_you_mean_no_change": {"test_did_you_mean_no_replacement_returns_none"},
 }
 
 
@@ -288,6 +312,62 @@ def test_daat_no_results() -> None:
 def test_daat_empty_input_lists_returns_empty() -> None:
     """DAAT AND returns empty for empty input list collection."""
     assert search.daat_and_merge([], []) == []
+
+
+def test_levenshtein_exact() -> None:
+    """Exact matches have zero edit distance."""
+    assert search.levenshtein("cat", "cat") == 0
+
+
+def test_levenshtein_one_edit() -> None:
+    """Single substitution has edit distance one."""
+    assert search.levenshtein("cat", "car") == 1
+
+
+def test_levenshtein_transpose() -> None:
+    """Adjacent transposition counts as one edit (Damerau behavior)."""
+    assert search.levenshtein("teh", "the") == 1
+
+
+def test_suggest_finds_close() -> None:
+    """Closest vocabulary term is returned within max distance."""
+    vocabulary = {"environment", "friend", "truth"}
+    assert search.suggest("environmnt", vocabulary, max_dist=2) == "environment"
+
+
+def test_suggest_no_match() -> None:
+    """No suggestion is returned when nothing is within max distance."""
+    vocabulary = {"environment", "friend", "truth"}
+    assert search.suggest("xyzxyzxyz", vocabulary, max_dist=2) is None
+
+
+def test_suggest_max_dist() -> None:
+    """Candidates outside max distance are not returned."""
+    vocabulary = {"environment"}
+    assert search.suggest("enviroxyz", vocabulary, max_dist=2) is None
+
+
+def test_did_you_mean_format() -> None:
+    """Did-you-mean returns the required formatted full-query suggestion."""
+    index = {
+        "terms": {
+            "good": {"df": 1, "postings": []},
+            "friends": {"df": 1, "postings": []},
+        }
+    }
+    suggestion = search.did_you_mean(["goood", "frends"], index)
+    assert suggestion == 'Did you mean: "good friends"?'
+
+
+def test_did_you_mean_no_replacement_returns_none() -> None:
+    """Did-you-mean returns None when no replacements are made."""
+    index = {
+        "terms": {
+            "good": {"df": 1, "postings": []},
+            "friends": {"df": 1, "postings": []},
+        }
+    }
+    assert search.did_you_mean(["good", "friends"], index) is None
 
 
 def test_objective_trace_completeness() -> None:

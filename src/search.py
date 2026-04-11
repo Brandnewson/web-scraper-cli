@@ -5,6 +5,7 @@ from __future__ import annotations
 import math
 
 K1 = 1.5    # BM25 term frequency saturation parameter (see docs/ENGINEERING_RATIONALE.md for details).
+DEFAULT_MAX_EDIT_DISTANCE = 2
 
 
 def score_bm25f(term: str, doc_id: int, index: dict) -> float:
@@ -190,3 +191,91 @@ def daat_and_merge(posting_lists: list[list[dict]], skip_lists: list[list[tuple[
                 return results
 
     return results
+
+
+def levenshtein(s1: str, s2: str) -> int:
+    """Compute edit distance with adjacent transposition support."""
+    if s1 == s2:
+        return 0
+
+    m = len(s1)
+    n = len(s2)
+    dp = [[0 for _ in range(n + 1)] for _ in range(m + 1)]
+
+    for i in range(m + 1):
+        dp[i][0] = i
+    for j in range(n + 1):
+        dp[0][j] = j
+
+    for i in range(1, m + 1):
+        for j in range(1, n + 1):
+            substitution_cost = 0 if s1[i - 1] == s2[j - 1] else 1
+            dp[i][j] = min(
+                dp[i - 1][j] + 1,
+                dp[i][j - 1] + 1,
+                dp[i - 1][j - 1] + substitution_cost,
+            )
+
+            # Adjacent transposition (Damerau-style) counts as one edit.
+            if (
+                i > 1
+                and j > 1
+                and s1[i - 1] == s2[j - 2]
+                and s1[i - 2] == s2[j - 1]
+            ):
+                dp[i][j] = min(dp[i][j], dp[i - 2][j - 2] + 1)
+
+    return dp[m][n]
+
+
+def suggest(
+    token: str,
+    vocabulary: set[str],
+    max_dist: int = DEFAULT_MAX_EDIT_DISTANCE,
+) -> str | None:
+    """Return the closest vocabulary candidate within max distance."""
+    best_candidate: str | None = None
+    best_distance = max_dist + 1
+
+    for candidate in sorted(vocabulary):
+        distance = levenshtein(token, candidate)
+        if distance > max_dist:
+            continue
+
+        if distance < best_distance:
+            best_distance = distance
+            best_candidate = candidate
+            continue
+
+        if distance == best_distance and best_candidate is not None and candidate < best_candidate:
+            best_candidate = candidate
+
+    return best_candidate
+
+
+def did_you_mean(query_tokens: list[str], index: dict) -> str | None:
+    """Suggest corrected query text when unknown tokens are detected."""
+    vocabulary = set(index.get("terms", {}).keys())
+    if not query_tokens or not vocabulary:
+        return None
+
+    suggested_tokens: list[str] = []
+    replaced_any = False
+
+    for token in query_tokens:
+        if token in vocabulary:
+            suggested_tokens.append(token)
+            continue
+
+        replacement = suggest(token, vocabulary)
+        if replacement is None:
+            suggested_tokens.append(token)
+            continue
+
+        suggested_tokens.append(replacement)
+        replaced_any = True
+
+    if not replaced_any:
+        return None
+
+    return f'Did you mean: "{" ".join(suggested_tokens)}"?'

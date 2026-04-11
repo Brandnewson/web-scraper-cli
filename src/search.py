@@ -87,3 +87,101 @@ def _field_denominator(b_value: float, field_length: int, avgdl: float) -> float
         return 1.0
     return denominator
 
+
+def build_skip_pointers(postings: list[dict]) -> list[tuple[int, int]]:
+    """
+    Build sqrt-spaced skip pointers for one posting list.
+    We use sqrt spacing as a common heuristic to balance skip pointer overhead and effectiveness.
+    """
+    if not postings:
+        return []
+
+    step = max(1, int(math.sqrt(len(postings))))
+    return [(postings[index]["doc_id"], index) for index in range(0, len(postings), step)]
+
+
+def advance_with_skips(
+    postings: list[dict],
+    skips: list[tuple[int, int]],
+    ptr: int,
+    target: int,
+) -> int:
+    """Advance pointer to first posting with doc_id >= target.
+
+    Raises:
+        StopIteration: If the pointer exhausts the posting list.
+    """
+    if ptr >= len(postings):
+        raise StopIteration
+
+    current_ptr = ptr
+
+    # Jump with skip pointers while the jump stays below target.
+    for skip_doc_id, skip_index in skips:
+        if skip_index <= current_ptr:
+            continue
+        if skip_doc_id < target:
+            current_ptr = skip_index
+            continue
+        break
+
+    # Finish with linear scan to land on first doc_id >= target.
+    while current_ptr < len(postings) and postings[current_ptr]["doc_id"] < target:
+        current_ptr += 1
+
+    if current_ptr >= len(postings):
+        raise StopIteration
+    return current_ptr
+
+
+def daat_and_merge(posting_lists: list[list[dict]], skip_lists: list[list[tuple[int, int]]]) -> list[int]:
+    """Intersect posting lists with document-at-a-time AND semantics."""
+    if not posting_lists:
+        return []
+
+    paired = sorted(
+        zip(posting_lists, skip_lists, strict=True),
+        key=lambda pair: len(pair[0]),
+    )
+    sorted_posting_lists = [pair[0] for pair in paired]
+    sorted_skip_lists = [pair[1] for pair in paired]
+
+    if any(len(postings) == 0 for postings in sorted_posting_lists):
+        return []
+
+    pointers = [0 for _ in sorted_posting_lists]
+    results: list[int] = []
+
+    while True:
+        try:
+            current_doc_ids = [
+                postings[pointers[index]]["doc_id"]
+                for index, postings in enumerate(sorted_posting_lists)
+            ]
+        except IndexError:
+            break
+
+        min_doc_id = min(current_doc_ids)
+        max_doc_id = max(current_doc_ids)
+
+        if min_doc_id == max_doc_id:
+            results.append(max_doc_id)
+            pointers = [pointer + 1 for pointer in pointers]
+            if any(pointer >= len(sorted_posting_lists[index]) for index, pointer in enumerate(pointers)):
+                break
+            continue
+
+        for index, current_doc_id in enumerate(current_doc_ids):
+            if current_doc_id >= max_doc_id:
+                continue
+            try:
+                pointers[index] = advance_with_skips(
+                    sorted_posting_lists[index],
+                    sorted_skip_lists[index],
+                    pointers[index],
+                    max_doc_id,
+                )
+            except StopIteration:
+                return results
+
+    return results

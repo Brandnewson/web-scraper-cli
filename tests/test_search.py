@@ -1,4 +1,4 @@
-"""BM25F scorer tests for Phase 4 TDD execution."""
+"""Search tests for BM25F and DAAT/skip primitives."""
 
 from __future__ import annotations
 
@@ -12,6 +12,14 @@ REQUIRED_OBJECTIVES = {
     "bm25f_length_normalization_effect",
     "bm25f_missing_term_behavior",
     "bm25f_missing_doc_behavior",
+    "skip_pointer_building",
+    "skip_pointer_advance",
+    "daat_single_term_intersection",
+    "daat_multi_term_intersection",
+    "daat_no_result_intersection",
+    "daat_empty_input_behavior",
+    "skip_pointer_empty_input_behavior",
+    "skip_pointer_exhaust_behavior",
 }
 
 REQUIRED_TEST_NAMES = {
@@ -20,6 +28,14 @@ REQUIRED_TEST_NAMES = {
     "test_bm25f_length_penalty",
     "test_bm25f_missing_term_returns_zero",
     "test_bm25f_missing_doc_returns_zero",
+    "test_skip_pointer_build",
+    "test_skip_pointer_advance",
+    "test_daat_single_term",
+    "test_daat_multi_term_and",
+    "test_daat_no_results",
+    "test_skip_pointer_build_empty_list",
+    "test_advance_with_skips_exhausts_raises_stopiteration",
+    "test_daat_empty_input_lists_returns_empty",
 }
 
 OBJECTIVE_TRACE = {
@@ -28,6 +44,14 @@ OBJECTIVE_TRACE = {
     "bm25f_length_normalization_effect": {"test_bm25f_length_penalty"},
     "bm25f_missing_term_behavior": {"test_bm25f_missing_term_returns_zero"},
     "bm25f_missing_doc_behavior": {"test_bm25f_missing_doc_returns_zero"},
+    "skip_pointer_building": {"test_skip_pointer_build"},
+    "skip_pointer_advance": {"test_skip_pointer_advance"},
+    "daat_single_term_intersection": {"test_daat_single_term"},
+    "daat_multi_term_intersection": {"test_daat_multi_term_and"},
+    "daat_no_result_intersection": {"test_daat_no_results"},
+    "daat_empty_input_behavior": {"test_daat_empty_input_lists_returns_empty"},
+    "skip_pointer_empty_input_behavior": {"test_skip_pointer_build_empty_list"},
+    "skip_pointer_exhaust_behavior": {"test_advance_with_skips_exhausts_raises_stopiteration"},
 }
 
 
@@ -186,9 +210,88 @@ def test_bm25f_missing_doc_returns_zero() -> None:
     assert search.score_bm25f("known", 99, index) == 0.0
 
 
+def _make_postings(doc_ids: list[int]) -> list[dict]:
+    """Build minimal posting dict list for DAAT/skip tests."""
+    return [
+        {"doc_id": doc_id, "url": f"https://quotes.toscrape.com/page/{doc_id}/", "fields": {}}
+        for doc_id in doc_ids
+    ]
+
+
+def test_skip_pointer_build() -> None:
+    """Skip pointers are emitted at sqrt-spaced indices."""
+    postings = _make_postings(list(range(100)))
+    skips = search.build_skip_pointers(postings)
+
+    expected = [(doc_id, doc_id) for doc_id in range(0, 100, 10)]
+    assert skips == expected
+
+
+def test_skip_pointer_build_empty_list() -> None:
+    """Empty postings produce an empty skip list."""
+    assert search.build_skip_pointers([]) == []
+
+
+def test_skip_pointer_advance() -> None:
+    """Skip-based advance lands on first doc_id >= target."""
+    postings = _make_postings([0, 2, 4, 6, 8, 10, 12, 14])
+    skips = search.build_skip_pointers(postings)
+
+    new_ptr = search.advance_with_skips(postings, skips, ptr=0, target=11)
+    assert postings[new_ptr]["doc_id"] == 12
+
+
+def test_advance_with_skips_exhausts_raises_stopiteration() -> None:
+    """Advance raises StopIteration when target is beyond list end."""
+    postings = _make_postings([1, 3, 5])
+    skips = search.build_skip_pointers(postings)
+
+    try:
+        search.advance_with_skips(postings, skips, ptr=0, target=9)
+        raised = False
+    except StopIteration:
+        raised = True
+    assert raised
+
+
+def test_daat_single_term() -> None:
+    """Single posting list returns all doc_ids in order."""
+    posting_lists = [_make_postings([1, 3, 5])]
+    skip_lists = [search.build_skip_pointers(posting_lists[0])]
+
+    assert search.daat_and_merge(posting_lists, skip_lists) == [1, 3, 5]
+
+
+def test_daat_multi_term_and() -> None:
+    """DAAT AND returns only shared doc_ids across all lists."""
+    posting_lists = [
+        _make_postings([1, 2, 4, 7]),
+        _make_postings([2, 4, 5, 7]),
+        _make_postings([0, 2, 4, 7, 9]),
+    ]
+    skip_lists = [search.build_skip_pointers(postings) for postings in posting_lists]
+
+    assert search.daat_and_merge(posting_lists, skip_lists) == [2, 4, 7]
+
+
+def test_daat_no_results() -> None:
+    """DAAT AND returns empty when no shared doc_ids exist."""
+    posting_lists = [
+        _make_postings([1, 3, 5]),
+        _make_postings([2, 4, 6]),
+    ]
+    skip_lists = [search.build_skip_pointers(postings) for postings in posting_lists]
+
+    assert search.daat_and_merge(posting_lists, skip_lists) == []
+
+
+def test_daat_empty_input_lists_returns_empty() -> None:
+    """DAAT AND returns empty for empty input list collection."""
+    assert search.daat_and_merge([], []) == []
+
+
 def test_objective_trace_completeness() -> None:
-    """Process validation: all BM25F objectives map to required tests."""
+    """Process validation: all phase objectives map to required tests."""
     assert set(OBJECTIVE_TRACE) == REQUIRED_OBJECTIVES
     mapped_test_names = set().union(*OBJECTIVE_TRACE.values())
     assert mapped_test_names == REQUIRED_TEST_NAMES
-

@@ -1,0 +1,121 @@
+{
+  "benchmark_row": {
+    "benchmark_name": "bm25f_vs_bm25_posthoc",
+    "configuration": "index=data\\index.json,queries=10,run_count=10,metric=nDCG@5,runtime_metric=mean_query_ms,bm25f_mean_ms=0.069,baseline_mean_ms=0.075",
+    "result": 1.0,
+    "baseline_result": 0.983544776905564,
+    "delta": 0.016455223094436033,
+    "units": "nDCG@5",
+    "run_count": 10
+  },
+  "macro_average": {
+    "bm25f_ndcg_at_5": 1.0,
+    "baseline_ndcg_at_5": 0.983544776905564,
+    "delta_ndcg_at_5": 0.016455223094436033,
+    "bm25f_mean_query_ms": 0.06913499673828483,
+    "baseline_mean_query_ms": 0.07466800045222044,
+    "delta_mean_query_ms": -0.005533003713935614
+  },
+  "per_query": [
+    {
+      "query_id": "q1",
+      "query_text": "life",
+      "bm25f_ndcg_at_5": 1.0,
+      "baseline_ndcg_at_5": 0.8428282648809379,
+      "delta_ndcg_at_5": 0.15717173511906213,
+      "bm25f_mean_query_ms": 0.12057004496455193,
+      "baseline_mean_query_ms": 0.12427002657204866,
+      "delta_mean_query_ms": -0.0036999816074967384
+    },
+    {
+      "query_id": "q2",
+      "query_text": "love",
+      "bm25f_ndcg_at_5": 1.0,
+      "baseline_ndcg_at_5": 0.992619504174702,
+      "delta_ndcg_at_5": 0.0073804958252979835,
+      "bm25f_mean_query_ms": 0.10913999285548925,
+      "baseline_mean_query_ms": 0.12003998272120953,
+      "delta_mean_query_ms": -0.010899989865720272
+    },
+    {
+      "query_id": "q3",
+      "query_text": "truth",
+      "bm25f_ndcg_at_5": 1.0,
+      "baseline_ndcg_at_5": 1.0,
+      "delta_ndcg_at_5": 0.0,
+      "bm25f_mean_query_ms": 0.053589954040944576,
+      "baseline_mean_query_ms": 0.06279998924583197,
+      "delta_mean_query_ms": -0.00921003520488739
+    },
+    {
+      "query_id": "q4",
+      "query_text": "good friends",
+      "bm25f_ndcg_at_5": 1.0,
+      "baseline_ndcg_at_5": 1.0,
+      "delta_ndcg_at_5": 0.0,
+      "bm25f_mean_query_ms": 0.06945994682610035,
+      "baseline_mean_query_ms": 0.06719003431499004,
+      "delta_mean_query_ms": 0.002269912511110306
+    },
+    {
+      "query_id": "q5",
+      "query_text": "heart",
+      "bm25f_ndcg_at_5": 1.0,
+      "baseline_ndcg_at_5": 1.0,
+      "delta_ndcg_at_5": 0.0,
+      "bm25f_mean_query_ms": 0.04542001988738775,
+      "baseline_mean_query_ms": 0.0430799787864089,
+      "delta_mean_query_ms": 0.0023400411009788513
+    },
+    {
+      "query_id": "q6",
+      "query_text": "mind",
+      "bm25f_ndcg_at_5": 1.0,
+      "baseline_ndcg_at_5": 1.0,
+      "delta_ndcg_at_5": 0.0,
+      "bm25f_mean_query_ms": 0.0638000201433897,
+      "baseline_mean_query_ms": 0.0614700373262167,
+      "delta_mean_query_ms": 0.002329982817173004
+    },
+    {
+      "query_id": "q7",
+      "query_text": "time",
+      "bm25f_ndcg_at_5": 1.0,
+      "baseline_ndcg_at_5": 1.0,
+      "delta_ndcg_at_5": 0.0,
+      "bm25f_mean_query_ms": 0.06653000600636005,
+      "baseline_mean_query_ms": 0.08107994217425585,
+      "delta_mean_query_ms": -0.014549936167895794
+    },
+    {
+      "query_id": "q8",
+      "query_text": "world",
+      "bm25f_ndcg_at_5": 1.0,
+      "baseline_ndcg_at_5": 1.0,
+      "delta_ndcg_at_5": 0.0,
+      "bm25f_mean_query_ms": 0.07703003939241171,
+      "baseline_mean_query_ms": 0.09423003066331148,
+      "delta_mean_query_ms": -0.017199991270899773
+    },
+    {
+      "query_id": "q9",
+      "query_text": "fear",
+      "bm25f_ndcg_at_5": 1.0,
+      "baseline_ndcg_at_5": 1.0,
+      "delta_ndcg_at_5": 0.0,
+      "bm25f_mean_query_ms": 0.04152993205934763,
+      "baseline_mean_query_ms": 0.04832001868635416,
+      "delta_mean_query_ms": -0.006790086627006531
+    },
+    {
+      "query_id": "q10",
+      "query_text": "friend",
+      "bm25f_ndcg_at_5": 1.0,
+      "baseline_ndcg_at_5": 1.0,
+      "delta_ndcg_at_5": 0.0,
+      "bm25f_mean_query_ms": 0.04428001120686531,
+      "baseline_mean_query_ms": 0.04419996403157711,
+      "delta_mean_query_ms": 8.004717528820038e-05
+    }
+  ]
+}

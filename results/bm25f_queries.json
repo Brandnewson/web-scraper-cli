@@ -1,0 +1,42 @@
+[
+  {
+    "query_id": "q1",
+    "query_text": "life"
+  },
+  {
+    "query_id": "q2",
+    "query_text": "love"
+  },
+  {
+    "query_id": "q3",
+    "query_text": "truth"
+  },
+  {
+    "query_id": "q4",
+    "query_text": "good friends"
+  },
+  {
+    "query_id": "q5",
+    "query_text": "heart"
+  },
+  {
+    "query_id": "q6",
+    "query_text": "mind"
+  },
+  {
+    "query_id": "q7",
+    "query_text": "time"
+  },
+  {
+    "query_id": "q8",
+    "query_text": "world"
+  },
+  {
+    "query_id": "q9",
+    "query_text": "fear"
+  },
+  {
+    "query_id": "q10",
+    "query_text": "friend"
+  }
+]

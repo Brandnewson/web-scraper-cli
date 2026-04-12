@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="340" viewBox="0 0 980 340">
+  <rect width="100%" height="100%" fill="#f7f9fc"/>
+  <text x="30" y="42" font-family="Segoe UI, Arial, sans-serif" font-size="28" fill="#111111">BM25F vs Baseline: Macro Mean Query Latency (ms)</text>
+  <text x="30" y="72" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#555555">Lower is better</text>
+
+  <text x="30" y="150" font-family="Segoe UI, Arial, sans-serif" font-size="18" fill="#222222">BM25F</text>
+  <rect x="210" y="125" width="700" height="34" fill="#2b8a3e"/>
+  <text x="922" y="148" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#222222">0.143964</text>
+
+  <text x="30" y="230" font-family="Segoe UI, Arial, sans-serif" font-size="18" fill="#222222">Baseline</text>
+  <rect x="210" y="205" width="530" height="34" fill="#d9480f"/>
+  <text x="752" y="228" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#222222">0.109022</text>
+
+  <text x="30" y="300" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#111111">Delta (BM25F - Baseline): +0.034942 ms</text>
+</svg>

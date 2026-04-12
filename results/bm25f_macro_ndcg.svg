@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="340" viewBox="0 0 980 340">
+  <rect width="100%" height="100%" fill="#fafafa"/>
+  <text x="30" y="42" font-family="Segoe UI, Arial, sans-serif" font-size="28" fill="#111111">BM25F vs Baseline: Macro nDCG@5</text>
+  <text x="30" y="72" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#555555">Higher is better</text>
+
+  <text x="30" y="150" font-family="Segoe UI, Arial, sans-serif" font-size="18" fill="#222222">BM25F</text>
+  <rect x="210" y="125" width="700" height="34" fill="#2b8a3e"/>
+  <text x="922" y="148" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#222222">1.000000</text>
+
+  <text x="30" y="230" font-family="Segoe UI, Arial, sans-serif" font-size="18" fill="#222222">Baseline</text>
+  <rect x="210" y="205" width="688" height="34" fill="#d9480f"/>
+  <text x="910" y="228" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#222222">0.983545</text>
+
+  <text x="30" y="300" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#111111">Delta (BM25F - Baseline): +0.016455</text>
+</svg>

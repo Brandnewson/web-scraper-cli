@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="570" viewBox="0 0 1080 570">
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <text x="30" y="40" font-family="Segoe UI, Arial, sans-serif" font-size="28" fill="#111111">Per-query Delta: Mean Query Latency (BM25F - Baseline)</text>
+  <text x="30" y="66" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#555555">Positive means BM25F > Baseline (ms)</text>
+  <line x1="560" y1="78" x2="560" y2="550" stroke="#999999" stroke-width="1"/>
+  <text x="20" y="108" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#222222">q2 (love)</text>
+  <rect x="560" y="94" width="440" height="16" fill="#2b8a3e"/>
+  <text x="1010" y="108" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#222222">+0.297790</text>
+  <text x="20" y="152" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#222222">q8 (world)</text>
+  <rect x="560" y="138" width="118" height="16" fill="#2b8a3e"/>
+  <text x="688" y="152" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#222222">+0.079920</text>
+  <text x="20" y="196" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#222222">q5 (heart)</text>
+  <rect x="560" y="182" width="21" height="16" fill="#2b8a3e"/>
+  <text x="591" y="196" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#222222">+0.014760</text>
+  <text x="20" y="240" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#222222">q4 (good friends)</text>
+  <rect x="560" y="226" width="9" height="16" fill="#2b8a3e"/>
+  <text x="579" y="240" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#222222">+0.006140</text>
+  <text x="20" y="284" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#222222">q9 (fear)</text>
+  <rect x="557" y="270" width="3" height="16" fill="#d9480f"/>
+  <text x="467" y="284" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#222222">-0.002090</text>
+  <text x="20" y="328" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#222222">q6 (mind)</text>
+  <rect x="555" y="314" width="5" height="16" fill="#d9480f"/>
+  <text x="465" y="328" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#222222">-0.003770</text>
+  <text x="20" y="372" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#222222">q10 (friend)</text>
+  <rect x="555" y="358" width="5" height="16" fill="#d9480f"/>
+  <text x="465" y="372" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#222222">-0.003890</text>
+  <text x="20" y="416" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#222222">q7 (time)</text>
+  <rect x="550" y="402" width="10" height="16" fill="#d9480f"/>
+  <text x="460" y="416" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#222222">-0.007230</text>
+  <text x="20" y="460" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#222222">q1 (life)</text>
+  <rect x="541" y="446" width="19" height="16" fill="#d9480f"/>
+  <text x="451" y="460" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#222222">-0.013260</text>
+  <text x="20" y="504" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#222222">q3 (truth)</text>
+  <rect x="533" y="490" width="27" height="16" fill="#d9480f"/>
+  <text x="443" y="504" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#222222">-0.018950</text>
+</svg>

@@ -21,6 +21,7 @@ from src import search
 BENCHMARK_NAME = "bm25f_vs_bm25_posthoc"
 QUERY_SPLIT_PATTERN = re.compile(r"[^a-z0-9]+")
 DEFAULT_RUN_COUNT = 10
+# Keep baseline fixed while tuning BM25F; this preserves a stable ablation reference point.
 BASELINE_K1 = 1.5
 BASELINE_B = 0.75
 
@@ -202,6 +203,7 @@ def _candidate_doc_ids(tokens: list[str], index: dict) -> list[int]:
         posting_lists.append(postings)
         skip_lists.append(search.build_skip_pointers(postings))
 
+    # Same candidate set for both methods keeps the comparison focused on scoring quality.
     return search.daat_and_merge(posting_lists, skip_lists)
 
 

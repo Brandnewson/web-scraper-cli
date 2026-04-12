@@ -1,0 +1,3558 @@
+{
+  "run_count": 10,
+  "grid_size": 48,
+  "rows": [
+    {
+      "config_id": "k1=2.0_b=0.75_default",
+      "k1": 2.0,
+      "b": 0.75,
+      "weights": {
+        "quote_body": 1.0,
+        "author": 3.0,
+        "tag": 2.0
+      },
+      "macro_ndcg_at_5": 1.0,
+      "macro_mean_query_ms": 0.04961499944329262,
+      "per_query": [
+        {
+          "query_id": "q1",
+          "query_text": "life",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.08356000762432814
+        },
+        {
+          "query_id": "q2",
+          "query_text": "love",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.10110996663570404
+        },
+        {
+          "query_id": "q3",
+          "query_text": "truth",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.05392003804445267
+        },
+        {
+          "query_id": "q4",
+          "query_text": "good friends",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.04435002338141203
+        },
+        {
+          "query_id": "q5",
+          "query_text": "heart",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.02592999953776598
+        },
+        {
+          "query_id": "q6",
+          "query_text": "mind",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.03784999717026949
+        },
+        {
+          "query_id": "q7",
+          "query_text": "time",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.0407699728384614
+        },
+        {
+          "query_id": "q8",
+          "query_text": "world",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.05456996150314808
+        },
+        {
+          "query_id": "q9",
+          "query_text": "fear",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.025080027990043163
+        },
+        {
+          "query_id": "q10",
+          "query_text": "friend",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.029009999707341194
+        }
+      ]
+    },
+    {
+      "config_id": "k1=1.2_b=0.75_metadata_heavy",
+      "k1": 1.2,
+      "b": 0.75,
+      "weights": {
+        "quote_body": 1.0,
+        "author": 3.5,
+        "tag": 2.5
+      },
+      "macro_ndcg_at_5": 1.0,
+      "macro_mean_query_ms": 0.04984700819477439,
+      "per_query": [
+        {
+          "query_id": "q1",
+          "query_text": "life",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.08581001311540604
+        },
+        {
+          "query_id": "q2",
+          "query_text": "love",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.10135998018085957
+        },
+        {
+          "query_id": "q3",
+          "query_text": "truth",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.05517005920410156
+        },
+        {
+          "query_id": "q4",
+          "query_text": "good friends",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.044320011511445045
+        },
+        {
+          "query_id": "q5",
+          "query_text": "heart",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.027900002896785736
+        },
+        {
+          "query_id": "q6",
+          "query_text": "mind",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.03510001115500927
+        },
+        {
+          "query_id": "q7",
+          "query_text": "time",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.04486003890633583
+        },
+        {
+          "query_id": "q8",
+          "query_text": "world",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.050949957221746445
+        },
+        {
+          "query_id": "q9",
+          "query_text": "fear",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.027670012786984444
+        },
+        {
+          "query_id": "q10",
+          "query_text": "friend",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.025329994969069958
+        }
+      ]
+    },
+    {
+      "config_id": "k1=1.2_b=0.9_default",
+      "k1": 1.2,
+      "b": 0.9,
+      "weights": {
+        "quote_body": 1.0,
+        "author": 3.0,
+        "tag": 2.0
+      },
+      "macro_ndcg_at_5": 1.0,
+      "macro_mean_query_ms": 0.052281992975622416,
+      "per_query": [
+        {
+          "query_id": "q1",
+          "query_text": "life",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.09488002397119999
+        },
+        {
+          "query_id": "q2",
+          "query_text": "love",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.10260001290589571
+        },
+        {
+          "query_id": "q3",
+          "query_text": "truth",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.05455994978547096
+        },
+        {
+          "query_id": "q4",
+          "query_text": "good friends",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.04392995033413172
+        },
+        {
+          "query_id": "q5",
+          "query_text": "heart",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.024759978987276554
+        },
+        {
+          "query_id": "q6",
+          "query_text": "mind",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.037550018168985844
+        },
+        {
+          "query_id": "q7",
+          "query_text": "time",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.04076000768691301
+        },
+        {
+          "query_id": "q8",
+          "query_text": "world",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.053449999541044235
+        },
+        {
+          "query_id": "q9",
+          "query_text": "fear",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.0246899900957942
+        },
+        {
+          "query_id": "q10",
+          "query_text": "friend",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.04563999827951193
+        }
+      ]
+    },
+    {
+      "config_id": "k1=1.5_b=0.9_default",
+      "k1": 1.5,
+      "b": 0.9,
+      "weights": {
+        "quote_body": 1.0,
+        "author": 3.0,
+        "tag": 2.0
+      },
+      "macro_ndcg_at_5": 1.0,
+      "macro_mean_query_ms": 0.05232600960880518,
+      "per_query": [
+        {
+          "query_id": "q1",
+          "query_text": "life",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.08678000885993242
+        },
+        {
+          "query_id": "q2",
+          "query_text": "love",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.10268001351505518
+        },
+        {
+          "query_id": "q3",
+          "query_text": "truth",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.05192004609853029
+        },
+        {
+          "query_id": "q4",
+          "query_text": "good friends",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.04851003177464008
+        },
+        {
+          "query_id": "q5",
+          "query_text": "heart",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.02506000455468893
+        },
+        {
+          "query_id": "q6",
+          "query_text": "mind",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.047900015488266945
+        },
+        {
+          "query_id": "q7",
+          "query_text": "time",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.051939976401627064
+        },
+        {
+          "query_id": "q8",
+          "query_text": "world",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.057370029389858246
+        },
+        {
+          "query_id": "q9",
+          "query_text": "fear",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.026240013539791107
+        },
+        {
+          "query_id": "q10",
+          "query_text": "friend",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.024859956465661526
+        }
+      ]
+    },
+    {
+      "config_id": "k1=2.0_b=0.9_metadata_heavy",
+      "k1": 2.0,
+      "b": 0.9,
+      "weights": {
+        "quote_body": 1.0,
+        "author": 3.5,
+        "tag": 2.5
+      },
+      "macro_ndcg_at_5": 1.0,
+      "macro_mean_query_ms": 0.05318999057635665,
+      "per_query": [
+        {
+          "query_id": "q1",
+          "query_text": "life",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.11477000080049038
+        },
+        {
+          "query_id": "q2",
+          "query_text": "love",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.10424999054521322
+        },
+        {
+          "query_id": "q3",
+          "query_text": "truth",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.058529945090413094
+        },
+        {
+          "query_id": "q4",
+          "query_text": "good friends",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.04635998047888279
+        },
+        {
+          "query_id": "q5",
+          "query_text": "heart",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.025759986601769924
+        },
+        {
+          "query_id": "q6",
+          "query_text": "mind",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.03540001343935728
+        },
+        {
+          "query_id": "q7",
+          "query_text": "time",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.040769996121525764
+        },
+        {
+          "query_id": "q8",
+          "query_text": "world",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.05341998767107725
+        },
+        {
+          "query_id": "q9",
+          "query_text": "fear",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.024889991618692875
+        },
+        {
+          "query_id": "q10",
+          "query_text": "friend",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.027750013396143913
+        }
+      ]
+    },
+    {
+      "config_id": "k1=2.0_b=0.75_metadata_heavy",
+      "k1": 2.0,
+      "b": 0.75,
+      "weights": {
+        "quote_body": 1.0,
+        "author": 3.5,
+        "tag": 2.5
+      },
+      "macro_ndcg_at_5": 1.0,
+      "macro_mean_query_ms": 0.0571330008096993,
+      "per_query": [
+        {
+          "query_id": "q1",
+          "query_text": "life",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.11081998236477375
+        },
+        {
+          "query_id": "q2",
+          "query_text": "love",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.11143998708575964
+        },
+        {
+          "query_id": "q3",
+          "query_text": "truth",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.051989988423883915
+        },
+        {
+          "query_id": "q4",
+          "query_text": "good friends",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.04934000317007303
+        },
+        {
+          "query_id": "q5",
+          "query_text": "heart",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.02556003164499998
+        },
+        {
+          "query_id": "q6",
+          "query_text": "mind",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.039689987897872925
+        },
+        {
+          "query_id": "q7",
+          "query_text": "time",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.04103998653590679
+        },
+        {
+          "query_id": "q8",
+          "query_text": "world",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.07235999219119549
+        },
+        {
+          "query_id": "q9",
+          "query_text": "fear",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.0327700050547719
+        },
+        {
+          "query_id": "q10",
+          "query_text": "friend",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.03632004372775555
+        }
+      ]
+    },
+    {
+      "config_id": "k1=1.2_b=0.9_metadata_heavy",
+      "k1": 1.2,
+      "b": 0.9,
+      "weights": {
+        "quote_body": 1.0,
+        "author": 3.5,
+        "tag": 2.5
+      },
+      "macro_ndcg_at_5": 1.0,
+      "macro_mean_query_ms": 0.058054011315107346,
+      "per_query": [
+        {
+          "query_id": "q1",
+          "query_text": "life",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.12775002978742123
+        },
+        {
+          "query_id": "q2",
+          "query_text": "love",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.13934997841715813
+        },
+        {
+          "query_id": "q3",
+          "query_text": "truth",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.05787003319710493
+        },
+        {
+          "query_id": "q4",
+          "query_text": "good friends",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.04479002673178911
+        },
+        {
+          "query_id": "q5",
+          "query_text": "heart",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.025280006229877472
+        },
+        {
+          "query_id": "q6",
+          "query_text": "mind",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.035360013134777546
+        },
+        {
+          "query_id": "q7",
+          "query_text": "time",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.04610004834830761
+        },
+        {
+          "query_id": "q8",
+          "query_text": "world",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.050650001503527164
+        },
+        {
+          "query_id": "q9",
+          "query_text": "fear",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.028409995138645172
+        },
+        {
+          "query_id": "q10",
+          "query_text": "friend",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.024979980662465096
+        }
+      ]
+    },
+    {
+      "config_id": "k1=2.0_b=0.9_default",
+      "k1": 2.0,
+      "b": 0.9,
+      "weights": {
+        "quote_body": 1.0,
+        "author": 3.0,
+        "tag": 2.0
+      },
+      "macro_ndcg_at_5": 1.0,
+      "macro_mean_query_ms": 0.061113990377634764,
+      "per_query": [
+        {
+          "query_id": "q1",
+          "query_text": "life",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.10547998826950788
+        },
+        {
+          "query_id": "q2",
+          "query_text": "love",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.10126994457095861
+        },
+        {
+          "query_id": "q3",
+          "query_text": "truth",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.055079953745007515
+        },
+        {
+          "query_id": "q4",
+          "query_text": "good friends",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.0830699922516942
+        },
+        {
+          "query_id": "q5",
+          "query_text": "heart",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.04479000344872475
+        },
+        {
+          "query_id": "q6",
+          "query_text": "mind",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.049770018085837364
+        },
+        {
+          "query_id": "q7",
+          "query_text": "time",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.04655001685023308
+        },
+        {
+          "query_id": "q8",
+          "query_text": "world",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.05582000594586134
+        },
+        {
+          "query_id": "q9",
+          "query_text": "fear",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.030319998040795326
+        },
+        {
+          "query_id": "q10",
+          "query_text": "friend",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.038989982567727566
+        }
+      ]
+    },
+    {
+      "config_id": "k1=1.5_b=0.75_metadata_heavy",
+      "k1": 1.5,
+      "b": 0.75,
+      "weights": {
+        "quote_body": 1.0,
+        "author": 3.5,
+        "tag": 2.5
+      },
+      "macro_ndcg_at_5": 1.0,
+      "macro_mean_query_ms": 0.061149990651756525,
+      "per_query": [
+        {
+          "query_id": "q1",
+          "query_text": "life",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.08497997187077999
+        },
+        {
+          "query_id": "q2",
+          "query_text": "love",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.1512099988758564
+        },
+        {
+          "query_id": "q3",
+          "query_text": "truth",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.0780599657446146
+        },
+        {
+          "query_id": "q4",
+          "query_text": "good friends",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.050940015353262424
+        },
+        {
+          "query_id": "q5",
+          "query_text": "heart",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.025049992837011814
+        },
+        {
+          "query_id": "q6",
+          "query_text": "mind",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.03786997403949499
+        },
+        {
+          "query_id": "q7",
+          "query_text": "time",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.04209994804114103
+        },
+        {
+          "query_id": "q8",
+          "query_text": "world",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.05386995617300272
+        },
+        {
+          "query_id": "q9",
+          "query_text": "fear",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.03674004692584276
+        },
+        {
+          "query_id": "q10",
+          "query_text": "friend",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.050680036656558514
+        }
+      ]
+    },
+    {
+      "config_id": "k1=1.5_b=0.75_default",
+      "k1": 1.5,
+      "b": 0.75,
+      "weights": {
+        "quote_body": 1.0,
+        "author": 3.0,
+        "tag": 2.0
+      },
+      "macro_ndcg_at_5": 1.0,
+      "macro_mean_query_ms": 0.06559899542480707,
+      "per_query": [
+        {
+          "query_id": "q1",
+          "query_text": "life",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.12182998470962048
+        },
+        {
+          "query_id": "q2",
+          "query_text": "love",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.11036999057978392
+        },
+        {
+          "query_id": "q3",
+          "query_text": "truth",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.05136996041983366
+        },
+        {
+          "query_id": "q4",
+          "query_text": "good friends",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.048079993575811386
+        },
+        {
+          "query_id": "q5",
+          "query_text": "heart",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.02475001383572817
+        },
+        {
+          "query_id": "q6",
+          "query_text": "mind",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.04787999205291271
+        },
+        {
+          "query_id": "q7",
+          "query_text": "time",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.0592400087043643
+        },
+        {
+          "query_id": "q8",
+          "query_text": "world",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.10003999341279268
+        },
+        {
+          "query_id": "q9",
+          "query_text": "fear",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.05313998553901911
+        },
+        {
+          "query_id": "q10",
+          "query_text": "friend",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.03929003141820431
+        }
+      ]
+    },
+    {
+      "config_id": "k1=1.2_b=0.75_default",
+      "k1": 1.2,
+      "b": 0.75,
+      "weights": {
+        "quote_body": 1.0,
+        "author": 3.0,
+        "tag": 2.0
+      },
+      "macro_ndcg_at_5": 1.0,
+      "macro_mean_query_ms": 0.07462400244548917,
+      "per_query": [
+        {
+          "query_id": "q1",
+          "query_text": "life",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.2537100110203028
+        },
+        {
+          "query_id": "q2",
+          "query_text": "love",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.17826997209340334
+        },
+        {
+          "query_id": "q3",
+          "query_text": "truth",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.0573399942368269
+        },
+        {
+          "query_id": "q4",
+          "query_text": "good friends",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.04562998656183481
+        },
+        {
+          "query_id": "q5",
+          "query_text": "heart",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.026250025257468224
+        },
+        {
+          "query_id": "q6",
+          "query_text": "mind",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.03969001118093729
+        },
+        {
+          "query_id": "q7",
+          "query_text": "time",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.04112001042813063
+        },
+        {
+          "query_id": "q8",
+          "query_text": "world",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.05337002221494913
+        },
+        {
+          "query_id": "q9",
+          "query_text": "fear",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.024990015663206577
+        },
+        {
+          "query_id": "q10",
+          "query_text": "friend",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.025869975797832012
+        }
+      ]
+    },
+    {
+      "config_id": "k1=1.8_b=0.9_metadata_heavy",
+      "k1": 1.8,
+      "b": 0.9,
+      "weights": {
+        "quote_body": 1.0,
+        "author": 3.5,
+        "tag": 2.5
+      },
+      "macro_ndcg_at_5": 1.0,
+      "macro_mean_query_ms": 0.07507401518523693,
+      "per_query": [
+        {
+          "query_id": "q1",
+          "query_text": "life",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.09073002729564905
+        },
+        {
+          "query_id": "q2",
+          "query_text": "love",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.1232700189575553
+        },
+        {
+          "query_id": "q3",
+          "query_text": "truth",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.05330001004040241
+        },
+        {
+          "query_id": "q4",
+          "query_text": "good friends",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.12728001456707716
+        },
+        {
+          "query_id": "q5",
+          "query_text": "heart",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.055210012942552567
+        },
+        {
+          "query_id": "q6",
+          "query_text": "mind",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.07117998320609331
+        },
+        {
+          "query_id": "q7",
+          "query_text": "time",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.06774002686142921
+        },
+        {
+          "query_id": "q8",
+          "query_text": "world",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.07924004457890987
+        },
+        {
+          "query_id": "q9",
+          "query_text": "fear",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.03915000706911087
+        },
+        {
+          "query_id": "q10",
+          "query_text": "friend",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.043640006333589554
+        }
+      ]
+    },
+    {
+      "config_id": "k1=1.8_b=0.75_metadata_heavy",
+      "k1": 1.8,
+      "b": 0.75,
+      "weights": {
+        "quote_body": 1.0,
+        "author": 3.5,
+        "tag": 2.5
+      },
+      "macro_ndcg_at_5": 1.0,
+      "macro_mean_query_ms": 0.0750839919783175,
+      "per_query": [
+        {
+          "query_id": "q1",
+          "query_text": "life",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.12354000937193632
+        },
+        {
+          "query_id": "q2",
+          "query_text": "love",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.14545002486556768
+        },
+        {
+          "query_id": "q3",
+          "query_text": "truth",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.0725399935618043
+        },
+        {
+          "query_id": "q4",
+          "query_text": "good friends",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.066320039331913
+        },
+        {
+          "query_id": "q5",
+          "query_text": "heart",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.037769926711916924
+        },
+        {
+          "query_id": "q6",
+          "query_text": "mind",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.049239955842494965
+        },
+        {
+          "query_id": "q7",
+          "query_text": "time",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.061119929887354374
+        },
+        {
+          "query_id": "q8",
+          "query_text": "world",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.0739500392228365
+        },
+        {
+          "query_id": "q9",
+          "query_text": "fear",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.03430997021496296
+        },
+        {
+          "query_id": "q10",
+          "query_text": "friend",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.08660003077238798
+        }
+      ]
+    },
+    {
+      "config_id": "k1=1.8_b=0.75_default",
+      "k1": 1.8,
+      "b": 0.75,
+      "weights": {
+        "quote_body": 1.0,
+        "author": 3.0,
+        "tag": 2.0
+      },
+      "macro_ndcg_at_5": 1.0,
+      "macro_mean_query_ms": 0.08774799993261695,
+      "per_query": [
+        {
+          "query_id": "q1",
+          "query_text": "life",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.16186998691409826
+        },
+        {
+          "query_id": "q2",
+          "query_text": "love",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.16650997567921877
+        },
+        {
+          "query_id": "q3",
+          "query_text": "truth",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.11214001569896936
+        },
+        {
+          "query_id": "q4",
+          "query_text": "good friends",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.09685002733021975
+        },
+        {
+          "query_id": "q5",
+          "query_text": "heart",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.036530010402202606
+        },
+        {
+          "query_id": "q6",
+          "query_text": "mind",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.05910999607294798
+        },
+        {
+          "query_id": "q7",
+          "query_text": "time",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.09157999884337187
+        },
+        {
+          "query_id": "q8",
+          "query_text": "world",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.07754000835120678
+        },
+        {
+          "query_id": "q9",
+          "query_text": "fear",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.040639983490109444
+        },
+        {
+          "query_id": "q10",
+          "query_text": "friend",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.03470999654382467
+        }
+      ]
+    },
+    {
+      "config_id": "k1=1.8_b=0.9_default",
+      "k1": 1.8,
+      "b": 0.9,
+      "weights": {
+        "quote_body": 1.0,
+        "author": 3.0,
+        "tag": 2.0
+      },
+      "macro_ndcg_at_5": 1.0,
+      "macro_mean_query_ms": 0.10898599866777658,
+      "per_query": [
+        {
+          "query_id": "q1",
+          "query_text": "life",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.2395800082013011
+        },
+        {
+          "query_id": "q2",
+          "query_text": "love",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.3062800271436572
+        },
+        {
+          "query_id": "q3",
+          "query_text": "truth",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.0909900525584817
+        },
+        {
+          "query_id": "q4",
+          "query_text": "good friends",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.06620995700359344
+        },
+        {
+          "query_id": "q5",
+          "query_text": "heart",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.03433998208492994
+        },
+        {
+          "query_id": "q6",
+          "query_text": "mind",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.057000014930963516
+        },
+        {
+          "query_id": "q7",
+          "query_text": "time",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.059040007181465626
+        },
+        {
+          "query_id": "q8",
+          "query_text": "world",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.12298999354243279
+        },
+        {
+          "query_id": "q9",
+          "query_text": "fear",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.06594997830688953
+        },
+        {
+          "query_id": "q10",
+          "query_text": "friend",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.047479965724051
+        }
+      ]
+    },
+    {
+      "config_id": "k1=1.5_b=0.9_metadata_heavy",
+      "k1": 1.5,
+      "b": 0.9,
+      "weights": {
+        "quote_body": 1.0,
+        "author": 3.5,
+        "tag": 2.5
+      },
+      "macro_ndcg_at_5": 1.0,
+      "macro_mean_query_ms": 0.1793689769692719,
+      "per_query": [
+        {
+          "query_id": "q1",
+          "query_text": "life",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.08529999759048223
+        },
+        {
+          "query_id": "q2",
+          "query_text": "love",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.10234999936074018
+        },
+        {
+          "query_id": "q3",
+          "query_text": "truth",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.05144996102899313
+        },
+        {
+          "query_id": "q4",
+          "query_text": "good friends",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.06379999686032534
+        },
+        {
+          "query_id": "q5",
+          "query_text": "heart",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.03900995943695307
+        },
+        {
+          "query_id": "q6",
+          "query_text": "mind",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.047369953244924545
+        },
+        {
+          "query_id": "q7",
+          "query_text": "time",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.05834996700286865
+        },
+        {
+          "query_id": "q8",
+          "query_text": "world",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.21771001629531384
+        },
+        {
+          "query_id": "q9",
+          "query_text": "fear",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 1.0887099662795663
+        },
+        {
+          "query_id": "q10",
+          "query_text": "friend",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.03963995259255171
+        }
+      ]
+    },
+    {
+      "config_id": "k1=2.0_b=0.9_balanced",
+      "k1": 2.0,
+      "b": 0.9,
+      "weights": {
+        "quote_body": 1.0,
+        "author": 2.0,
+        "tag": 1.5
+      },
+      "macro_ndcg_at_5": 0.9819230240747553,
+      "macro_mean_query_ms": 0.05264999810606241,
+      "per_query": [
+        {
+          "query_id": "q1",
+          "query_text": "life",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.10927997063845396
+        },
+        {
+          "query_id": "q2",
+          "query_text": "love",
+          "ndcg_at_5": 0.992619504174702,
+          "mean_query_ms": 0.10274997912347317
+        },
+        {
+          "query_id": "q3",
+          "query_text": "truth",
+          "ndcg_at_5": 0.992619504174702,
+          "mean_query_ms": 0.05724998190999031
+        },
+        {
+          "query_id": "q4",
+          "query_text": "good friends",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.04592002369463444
+        },
+        {
+          "query_id": "q5",
+          "query_text": "heart",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.027840002439916134
+        },
+        {
+          "query_id": "q6",
+          "query_text": "mind",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.03541000187397003
+        },
+        {
+          "query_id": "q7",
+          "query_text": "time",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.043829972855746746
+        },
+        {
+          "query_id": "q8",
+          "query_text": "world",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.05178004503250122
+        },
+        {
+          "query_id": "q9",
+          "query_text": "fear",
+          "ndcg_at_5": 0.8339912323981488,
+          "mean_query_ms": 0.024860003031790257
+        },
+        {
+          "query_id": "q10",
+          "query_text": "friend",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.027580000460147858
+        }
+      ]
+    },
+    {
+      "config_id": "k1=1.5_b=0.9_balanced",
+      "k1": 1.5,
+      "b": 0.9,
+      "weights": {
+        "quote_body": 1.0,
+        "author": 2.0,
+        "tag": 1.5
+      },
+      "macro_ndcg_at_5": 0.9819230240747553,
+      "macro_mean_query_ms": 0.05607198690995574,
+      "per_query": [
+        {
+          "query_id": "q1",
+          "query_text": "life",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.08137000259011984
+        },
+        {
+          "query_id": "q2",
+          "query_text": "love",
+          "ndcg_at_5": 0.992619504174702,
+          "mean_query_ms": 0.10454999282956123
+        },
+        {
+          "query_id": "q3",
+          "query_text": "truth",
+          "ndcg_at_5": 0.992619504174702,
+          "mean_query_ms": 0.05178998690098524
+        },
+        {
+          "query_id": "q4",
+          "query_text": "good friends",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.047159986570477486
+        },
+        {
+          "query_id": "q5",
+          "query_text": "heart",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.02506999298930168
+        },
+        {
+          "query_id": "q6",
+          "query_text": "mind",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.03631997387856245
+        },
+        {
+          "query_id": "q7",
+          "query_text": "time",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.04368999507278204
+        },
+        {
+          "query_id": "q8",
+          "query_text": "world",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.05581995937973261
+        },
+        {
+          "query_id": "q9",
+          "query_text": "fear",
+          "ndcg_at_5": 0.8339912323981488,
+          "mean_query_ms": 0.05644999910145998
+        },
+        {
+          "query_id": "q10",
+          "query_text": "friend",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.05849997978657484
+        }
+      ]
+    },
+    {
+      "config_id": "k1=1.8_b=0.9_balanced",
+      "k1": 1.8,
+      "b": 0.9,
+      "weights": {
+        "quote_body": 1.0,
+        "author": 2.0,
+        "tag": 1.5
+      },
+      "macro_ndcg_at_5": 0.9819230240747553,
+      "macro_mean_query_ms": 0.08574699750170112,
+      "per_query": [
+        {
+          "query_id": "q1",
+          "query_text": "life",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.3951499704271555
+        },
+        {
+          "query_id": "q2",
+          "query_text": "love",
+          "ndcg_at_5": 0.992619504174702,
+          "mean_query_ms": 0.15050999354571104
+        },
+        {
+          "query_id": "q3",
+          "query_text": "truth",
+          "ndcg_at_5": 0.992619504174702,
+          "mean_query_ms": 0.05266999360173941
+        },
+        {
+          "query_id": "q4",
+          "query_text": "good friends",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.051660044118762016
+        },
+        {
+          "query_id": "q5",
+          "query_text": "heart",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.02588997595012188
+        },
+        {
+          "query_id": "q6",
+          "query_text": "mind",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.035470025613904
+        },
+        {
+          "query_id": "q7",
+          "query_text": "time",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.04120997618883848
+        },
+        {
+          "query_id": "q8",
+          "query_text": "world",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.05465999711304903
+        },
+        {
+          "query_id": "q9",
+          "query_text": "fear",
+          "ndcg_at_5": 0.8339912323981488,
+          "mean_query_ms": 0.02508999314159155
+        },
+        {
+          "query_id": "q10",
+          "query_text": "friend",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.025160005316138268
+        }
+      ]
+    },
+    {
+      "config_id": "k1=1.2_b=0.9_balanced",
+      "k1": 1.2,
+      "b": 0.9,
+      "weights": {
+        "quote_body": 1.0,
+        "author": 2.0,
+        "tag": 1.5
+      },
+      "macro_ndcg_at_5": 0.9819230240747553,
+      "macro_mean_query_ms": 0.09444799739867449,
+      "per_query": [
+        {
+          "query_id": "q1",
+          "query_text": "life",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.32895002514123917
+        },
+        {
+          "query_id": "q2",
+          "query_text": "love",
+          "ndcg_at_5": 0.992619504174702,
+          "mean_query_ms": 0.14960996340960264
+        },
+        {
+          "query_id": "q3",
+          "query_text": "truth",
+          "ndcg_at_5": 0.992619504174702,
+          "mean_query_ms": 0.0841599889099598
+        },
+        {
+          "query_id": "q4",
+          "query_text": "good friends",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.07474999874830246
+        },
+        {
+          "query_id": "q5",
+          "query_text": "heart",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.042470055632293224
+        },
+        {
+          "query_id": "q6",
+          "query_text": "mind",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.053659966215491295
+        },
+        {
+          "query_id": "q7",
+          "query_text": "time",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.0675299670547247
+        },
+        {
+          "query_id": "q8",
+          "query_text": "world",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.08080997504293919
+        },
+        {
+          "query_id": "q9",
+          "query_text": "fear",
+          "ndcg_at_5": 0.8339912323981488,
+          "mean_query_ms": 0.0332200201228261
+        },
+        {
+          "query_id": "q10",
+          "query_text": "friend",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.02932001370936632
+        }
+      ]
+    },
+    {
+      "config_id": "k1=1.5_b=0.5_default",
+      "k1": 1.5,
+      "b": 0.5,
+      "weights": {
+        "quote_body": 1.0,
+        "author": 3.0,
+        "tag": 2.0
+      },
+      "macro_ndcg_at_5": 0.9814949484693869,
+      "macro_mean_query_ms": 0.06109199719503522,
+      "per_query": [
+        {
+          "query_id": "q1",
+          "query_text": "life",
+          "ndcg_at_5": 0.8428282648809379,
+          "mean_query_ms": 0.08674000855535269
+        },
+        {
+          "query_id": "q2",
+          "query_text": "love",
+          "ndcg_at_5": 0.9721212198129313,
+          "mean_query_ms": 0.13813001569360495
+        },
+        {
+          "query_id": "q3",
+          "query_text": "truth",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.09022997692227364
+        },
+        {
+          "query_id": "q4",
+          "query_text": "good friends",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.060629984363913536
+        },
+        {
+          "query_id": "q5",
+          "query_text": "heart",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.032299989834427834
+        },
+        {
+          "query_id": "q6",
+          "query_text": "mind",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.04930996801704168
+        },
+        {
+          "query_id": "q7",
+          "query_text": "time",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.04918002523481846
+        },
+        {
+          "query_id": "q8",
+          "query_text": "world",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.051039992831647396
+        },
+        {
+          "query_id": "q9",
+          "query_text": "fear",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.02739999908953905
+        },
+        {
+          "query_id": "q10",
+          "query_text": "friend",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.025960011407732964
+        }
+      ]
+    },
+    {
+      "config_id": "k1=1.2_b=0.5_metadata_heavy",
+      "k1": 1.2,
+      "b": 0.5,
+      "weights": {
+        "quote_body": 1.0,
+        "author": 3.5,
+        "tag": 2.5
+      },
+      "macro_ndcg_at_5": 0.9814949484693869,
+      "macro_mean_query_ms": 0.06179100601002574,
+      "per_query": [
+        {
+          "query_id": "q1",
+          "query_text": "life",
+          "ndcg_at_5": 0.8428282648809379,
+          "mean_query_ms": 0.10394002310931683
+        },
+        {
+          "query_id": "q2",
+          "query_text": "love",
+          "ndcg_at_5": 0.9721212198129313,
+          "mean_query_ms": 0.15898002311587334
+        },
+        {
+          "query_id": "q3",
+          "query_text": "truth",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.06677000783383846
+        },
+        {
+          "query_id": "q4",
+          "query_text": "good friends",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.056700012646615505
+        },
+        {
+          "query_id": "q5",
+          "query_text": "heart",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.030930014327168465
+        },
+        {
+          "query_id": "q6",
+          "query_text": "mind",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.047270022332668304
+        },
+        {
+          "query_id": "q7",
+          "query_text": "time",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.041079986840486526
+        },
+        {
+          "query_id": "q8",
+          "query_text": "world",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.057369982823729515
+        },
+        {
+          "query_id": "q9",
+          "query_text": "fear",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.025509996339678764
+        },
+        {
+          "query_id": "q10",
+          "query_text": "friend",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.02935999073088169
+        }
+      ]
+    },
+    {
+      "config_id": "k1=2.0_b=0.5_metadata_heavy",
+      "k1": 2.0,
+      "b": 0.5,
+      "weights": {
+        "quote_body": 1.0,
+        "author": 3.5,
+        "tag": 2.5
+      },
+      "macro_ndcg_at_5": 0.9814949484693869,
+      "macro_mean_query_ms": 0.06183099700137973,
+      "per_query": [
+        {
+          "query_id": "q1",
+          "query_text": "life",
+          "ndcg_at_5": 0.8428282648809379,
+          "mean_query_ms": 0.10730004869401455
+        },
+        {
+          "query_id": "q2",
+          "query_text": "love",
+          "ndcg_at_5": 0.9721212198129313,
+          "mean_query_ms": 0.12419000267982483
+        },
+        {
+          "query_id": "q3",
+          "query_text": "truth",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.07882004138082266
+        },
+        {
+          "query_id": "q4",
+          "query_text": "good friends",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.06716996431350708
+        },
+        {
+          "query_id": "q5",
+          "query_text": "heart",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.03899997100234032
+        },
+        {
+          "query_id": "q6",
+          "query_text": "mind",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.049409992061555386
+        },
+        {
+          "query_id": "q7",
+          "query_text": "time",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.04859997425228357
+        },
+        {
+          "query_id": "q8",
+          "query_text": "world",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.0515299616381526
+        },
+        {
+          "query_id": "q9",
+          "query_text": "fear",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.027459976263344288
+        },
+        {
+          "query_id": "q10",
+          "query_text": "friend",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.024830037727952003
+        }
+      ]
+    },
+    {
+      "config_id": "k1=2.0_b=0.5_default",
+      "k1": 2.0,
+      "b": 0.5,
+      "weights": {
+        "quote_body": 1.0,
+        "author": 3.0,
+        "tag": 2.0
+      },
+      "macro_ndcg_at_5": 0.9814949484693869,
+      "macro_mean_query_ms": 0.07252700859680772,
+      "per_query": [
+        {
+          "query_id": "q1",
+          "query_text": "life",
+          "ndcg_at_5": 0.8428282648809379,
+          "mean_query_ms": 0.12994003482162952
+        },
+        {
+          "query_id": "q2",
+          "query_text": "love",
+          "ndcg_at_5": 0.9721212198129313,
+          "mean_query_ms": 0.1599299954250455
+        },
+        {
+          "query_id": "q3",
+          "query_text": "truth",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.0836800318211317
+        },
+        {
+          "query_id": "q4",
+          "query_text": "good friends",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.08780001662671566
+        },
+        {
+          "query_id": "q5",
+          "query_text": "heart",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.02597002312541008
+        },
+        {
+          "query_id": "q6",
+          "query_text": "mind",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.03795998636633158
+        },
+        {
+          "query_id": "q7",
+          "query_text": "time",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.058280001394450665
+        },
+        {
+          "query_id": "q8",
+          "query_text": "world",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.05880000535398722
+        },
+        {
+          "query_id": "q9",
+          "query_text": "fear",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.053700036369264126
+        },
+        {
+          "query_id": "q10",
+          "query_text": "friend",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.029209954664111137
+        }
+      ]
+    },
+    {
+      "config_id": "k1=1.2_b=0.5_default",
+      "k1": 1.2,
+      "b": 0.5,
+      "weights": {
+        "quote_body": 1.0,
+        "author": 3.0,
+        "tag": 2.0
+      },
+      "macro_ndcg_at_5": 0.9814949484693869,
+      "macro_mean_query_ms": 0.0753089995123446,
+      "per_query": [
+        {
+          "query_id": "q1",
+          "query_text": "life",
+          "ndcg_at_5": 0.8428282648809379,
+          "mean_query_ms": 0.13725000899285078
+        },
+        {
+          "query_id": "q2",
+          "query_text": "love",
+          "ndcg_at_5": 0.9721212198129313,
+          "mean_query_ms": 0.1639499794691801
+        },
+        {
+          "query_id": "q3",
+          "query_text": "truth",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.08192998357117176
+        },
+        {
+          "query_id": "q4",
+          "query_text": "good friends",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.0677300151437521
+        },
+        {
+          "query_id": "q5",
+          "query_text": "heart",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.03637003246694803
+        },
+        {
+          "query_id": "q6",
+          "query_text": "mind",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.05516991950571537
+        },
+        {
+          "query_id": "q7",
+          "query_text": "time",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.058230035938322544
+        },
+        {
+          "query_id": "q8",
+          "query_text": "world",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.07620006799697876
+        },
+        {
+          "query_id": "q9",
+          "query_text": "fear",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.040699983946979046
+        },
+        {
+          "query_id": "q10",
+          "query_text": "friend",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.03555996809154749
+        }
+      ]
+    },
+    {
+      "config_id": "k1=1.5_b=0.5_metadata_heavy",
+      "k1": 1.5,
+      "b": 0.5,
+      "weights": {
+        "quote_body": 1.0,
+        "author": 3.5,
+        "tag": 2.5
+      },
+      "macro_ndcg_at_5": 0.9814949484693869,
+      "macro_mean_query_ms": 0.07632099324837327,
+      "per_query": [
+        {
+          "query_id": "q1",
+          "query_text": "life",
+          "ndcg_at_5": 0.8428282648809379,
+          "mean_query_ms": 0.08725994266569614
+        },
+        {
+          "query_id": "q2",
+          "query_text": "love",
+          "ndcg_at_5": 0.9721212198129313,
+          "mean_query_ms": 0.1451900228857994
+        },
+        {
+          "query_id": "q3",
+          "query_text": "truth",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.12217999901622534
+        },
+        {
+          "query_id": "q4",
+          "query_text": "good friends",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.09266005363315344
+        },
+        {
+          "query_id": "q5",
+          "query_text": "heart",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.039079971611499786
+        },
+        {
+          "query_id": "q6",
+          "query_text": "mind",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.0583000248298049
+        },
+        {
+          "query_id": "q7",
+          "query_text": "time",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.06807998288422823
+        },
+        {
+          "query_id": "q8",
+          "query_text": "world",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.07323999889194965
+        },
+        {
+          "query_id": "q9",
+          "query_text": "fear",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.03783996216952801
+        },
+        {
+          "query_id": "q10",
+          "query_text": "friend",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.0393799738958478
+        }
+      ]
+    },
+    {
+      "config_id": "k1=1.8_b=0.5_metadata_heavy",
+      "k1": 1.8,
+      "b": 0.5,
+      "weights": {
+        "quote_body": 1.0,
+        "author": 3.5,
+        "tag": 2.5
+      },
+      "macro_ndcg_at_5": 0.9814949484693869,
+      "macro_mean_query_ms": 0.116497993003577,
+      "per_query": [
+        {
+          "query_id": "q1",
+          "query_text": "life",
+          "ndcg_at_5": 0.8428282648809379,
+          "mean_query_ms": 0.14148997142910957
+        },
+        {
+          "query_id": "q2",
+          "query_text": "love",
+          "ndcg_at_5": 0.9721212198129313,
+          "mean_query_ms": 0.18679997883737087
+        },
+        {
+          "query_id": "q3",
+          "query_text": "truth",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.09109997190535069
+        },
+        {
+          "query_id": "q4",
+          "query_text": "good friends",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.14754002913832664
+        },
+        {
+          "query_id": "q5",
+          "query_text": "heart",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.2448900369927287
+        },
+        {
+          "query_id": "q6",
+          "query_text": "mind",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.10778000578284264
+        },
+        {
+          "query_id": "q7",
+          "query_text": "time",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.06446996703743935
+        },
+        {
+          "query_id": "q8",
+          "query_text": "world",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.08249995298683643
+        },
+        {
+          "query_id": "q9",
+          "query_text": "fear",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.055459956638514996
+        },
+        {
+          "query_id": "q10",
+          "query_text": "friend",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.04295005928725004
+        }
+      ]
+    },
+    {
+      "config_id": "k1=1.8_b=0.5_default",
+      "k1": 1.8,
+      "b": 0.5,
+      "weights": {
+        "quote_body": 1.0,
+        "author": 3.0,
+        "tag": 2.0
+      },
+      "macro_ndcg_at_5": 0.9814949484693869,
+      "macro_mean_query_ms": 0.12847699923440814,
+      "per_query": [
+        {
+          "query_id": "q1",
+          "query_text": "life",
+          "ndcg_at_5": 0.8428282648809379,
+          "mean_query_ms": 0.30835994984954596
+        },
+        {
+          "query_id": "q2",
+          "query_text": "love",
+          "ndcg_at_5": 0.9721212198129313,
+          "mean_query_ms": 0.1905699959024787
+        },
+        {
+          "query_id": "q3",
+          "query_text": "truth",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.10293000377714634
+        },
+        {
+          "query_id": "q4",
+          "query_text": "good friends",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.09304999839514494
+        },
+        {
+          "query_id": "q5",
+          "query_text": "heart",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.06454999092966318
+        },
+        {
+          "query_id": "q6",
+          "query_text": "mind",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.09240997023880482
+        },
+        {
+          "query_id": "q7",
+          "query_text": "time",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.2676599659025669
+        },
+        {
+          "query_id": "q8",
+          "query_text": "world",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.08160006254911423
+        },
+        {
+          "query_id": "q9",
+          "query_text": "fear",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.0385800376534462
+        },
+        {
+          "query_id": "q10",
+          "query_text": "friend",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.04506001714617014
+        }
+      ]
+    },
+    {
+      "config_id": "k1=1.2_b=0.5_balanced",
+      "k1": 1.2,
+      "b": 0.5,
+      "weights": {
+        "quote_body": 1.0,
+        "author": 2.0,
+        "tag": 1.5
+      },
+      "macro_ndcg_at_5": 0.9676819497279087,
+      "macro_mean_query_ms": 0.06764700170606375,
+      "per_query": [
+        {
+          "query_id": "q1",
+          "query_text": "life",
+          "ndcg_at_5": 0.8428282648809379,
+          "mean_query_ms": 0.11861997190862894
+        },
+        {
+          "query_id": "q2",
+          "query_text": "love",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.139930029399693
+        },
+        {
+          "query_id": "q3",
+          "query_text": "truth",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.07713001687079668
+        },
+        {
+          "query_id": "q4",
+          "query_text": "good friends",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.06655000615864992
+        },
+        {
+          "query_id": "q5",
+          "query_text": "heart",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.03592998255044222
+        },
+        {
+          "query_id": "q6",
+          "query_text": "mind",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.049999961629509926
+        },
+        {
+          "query_id": "q7",
+          "query_text": "time",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.04802001640200615
+        },
+        {
+          "query_id": "q8",
+          "query_text": "world",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.06889000069350004
+        },
+        {
+          "query_id": "q9",
+          "query_text": "fear",
+          "ndcg_at_5": 0.8339912323981488,
+          "mean_query_ms": 0.038300035521388054
+        },
+        {
+          "query_id": "q10",
+          "query_text": "friend",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.03309999592602253
+        }
+      ]
+    },
+    {
+      "config_id": "k1=1.5_b=0.5_balanced",
+      "k1": 1.5,
+      "b": 0.5,
+      "weights": {
+        "quote_body": 1.0,
+        "author": 2.0,
+        "tag": 1.5
+      },
+      "macro_ndcg_at_5": 0.9676819497279087,
+      "macro_mean_query_ms": 0.07202599663287401,
+      "per_query": [
+        {
+          "query_id": "q1",
+          "query_text": "life",
+          "ndcg_at_5": 0.8428282648809379,
+          "mean_query_ms": 0.08994003292173147
+        },
+        {
+          "query_id": "q2",
+          "query_text": "love",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.17919994425028563
+        },
+        {
+          "query_id": "q3",
+          "query_text": "truth",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.07454000879079103
+        },
+        {
+          "query_id": "q4",
+          "query_text": "good friends",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.05191999953240156
+        },
+        {
+          "query_id": "q5",
+          "query_text": "heart",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.07170999888330698
+        },
+        {
+          "query_id": "q6",
+          "query_text": "mind",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.040909997187554836
+        },
+        {
+          "query_id": "q7",
+          "query_text": "time",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.04690997302532196
+        },
+        {
+          "query_id": "q8",
+          "query_text": "world",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.08112003561109304
+        },
+        {
+          "query_id": "q9",
+          "query_text": "fear",
+          "ndcg_at_5": 0.8339912323981488,
+          "mean_query_ms": 0.04841999616473913
+        },
+        {
+          "query_id": "q10",
+          "query_text": "friend",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.03558997996151447
+        }
+      ]
+    },
+    {
+      "config_id": "k1=2.0_b=0.5_balanced",
+      "k1": 2.0,
+      "b": 0.5,
+      "weights": {
+        "quote_body": 1.0,
+        "author": 2.0,
+        "tag": 1.5
+      },
+      "macro_ndcg_at_5": 0.9676819497279087,
+      "macro_mean_query_ms": 0.07480300962924957,
+      "per_query": [
+        {
+          "query_id": "q1",
+          "query_text": "life",
+          "ndcg_at_5": 0.8428282648809379,
+          "mean_query_ms": 0.1083100214600563
+        },
+        {
+          "query_id": "q2",
+          "query_text": "love",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.10224999859929085
+        },
+        {
+          "query_id": "q3",
+          "query_text": "truth",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.07592004258185625
+        },
+        {
+          "query_id": "q4",
+          "query_text": "good friends",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.08654994890093803
+        },
+        {
+          "query_id": "q5",
+          "query_text": "heart",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.05422001704573631
+        },
+        {
+          "query_id": "q6",
+          "query_text": "mind",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.05357000045478344
+        },
+        {
+          "query_id": "q7",
+          "query_text": "time",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.06491004023700953
+        },
+        {
+          "query_id": "q8",
+          "query_text": "world",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.12843003496527672
+        },
+        {
+          "query_id": "q9",
+          "query_text": "fear",
+          "ndcg_at_5": 0.8339912323981488,
+          "mean_query_ms": 0.030150008387863636
+        },
+        {
+          "query_id": "q10",
+          "query_text": "friend",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.04371998365968466
+        }
+      ]
+    },
+    {
+      "config_id": "k1=1.8_b=0.5_balanced",
+      "k1": 1.8,
+      "b": 0.5,
+      "weights": {
+        "quote_body": 1.0,
+        "author": 2.0,
+        "tag": 1.5
+      },
+      "macro_ndcg_at_5": 0.9676819497279087,
+      "macro_mean_query_ms": 0.1734090014360845,
+      "per_query": [
+        {
+          "query_id": "q1",
+          "query_text": "life",
+          "ndcg_at_5": 0.8428282648809379,
+          "mean_query_ms": 0.992499990388751
+        },
+        {
+          "query_id": "q2",
+          "query_text": "love",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.2072999719530344
+        },
+        {
+          "query_id": "q3",
+          "query_text": "truth",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.09864999447017908
+        },
+        {
+          "query_id": "q4",
+          "query_text": "good friends",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.0919699901714921
+        },
+        {
+          "query_id": "q5",
+          "query_text": "heart",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.04189000464975834
+        },
+        {
+          "query_id": "q6",
+          "query_text": "mind",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.0750100240111351
+        },
+        {
+          "query_id": "q7",
+          "query_text": "time",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.06965002976357937
+        },
+        {
+          "query_id": "q8",
+          "query_text": "world",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.07737004198133945
+        },
+        {
+          "query_id": "q9",
+          "query_text": "fear",
+          "ndcg_at_5": 0.8339912323981488,
+          "mean_query_ms": 0.04081993829458952
+        },
+        {
+          "query_id": "q10",
+          "query_text": "friend",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.038930028676986694
+        }
+      ]
+    },
+    {
+      "config_id": "k1=1.2_b=0.75_balanced",
+      "k1": 1.2,
+      "b": 0.75,
+      "weights": {
+        "quote_body": 1.0,
+        "author": 2.0,
+        "tag": 1.5
+      },
+      "macro_ndcg_at_5": 0.9669439001453789,
+      "macro_mean_query_ms": 0.04901499254629016,
+      "per_query": [
+        {
+          "query_id": "q1",
+          "query_text": "life",
+          "ndcg_at_5": 0.8428282648809379,
+          "mean_query_ms": 0.0816600164398551
+        },
+        {
+          "query_id": "q2",
+          "query_text": "love",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.10134996846318245
+        },
+        {
+          "query_id": "q3",
+          "query_text": "truth",
+          "ndcg_at_5": 0.992619504174702,
+          "mean_query_ms": 0.053030019626021385
+        },
+        {
+          "query_id": "q4",
+          "query_text": "good friends",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.04676997195929289
+        },
+        {
+          "query_id": "q5",
+          "query_text": "heart",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.02482000272721052
+        },
+        {
+          "query_id": "q6",
+          "query_text": "mind",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.035069952718913555
+        },
+        {
+          "query_id": "q7",
+          "query_text": "time",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.04461000207811594
+        },
+        {
+          "query_id": "q8",
+          "query_text": "world",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.05007998552173376
+        },
+        {
+          "query_id": "q9",
+          "query_text": "fear",
+          "ndcg_at_5": 0.8339912323981488,
+          "mean_query_ms": 0.027620000764727592
+        },
+        {
+          "query_id": "q10",
+          "query_text": "friend",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.0251400051638484
+        }
+      ]
+    },
+    {
+      "config_id": "k1=2.0_b=0.75_balanced",
+      "k1": 2.0,
+      "b": 0.75,
+      "weights": {
+        "quote_body": 1.0,
+        "author": 2.0,
+        "tag": 1.5
+      },
+      "macro_ndcg_at_5": 0.9669439001453789,
+      "macro_mean_query_ms": 0.05034600384533405,
+      "per_query": [
+        {
+          "query_id": "q1",
+          "query_text": "life",
+          "ndcg_at_5": 0.8428282648809379,
+          "mean_query_ms": 0.0840100459754467
+        },
+        {
+          "query_id": "q2",
+          "query_text": "love",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.10190997272729874
+        },
+        {
+          "query_id": "q3",
+          "query_text": "truth",
+          "ndcg_at_5": 0.992619504174702,
+          "mean_query_ms": 0.051930034533143044
+        },
+        {
+          "query_id": "q4",
+          "query_text": "good friends",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.05801997613161802
+        },
+        {
+          "query_id": "q5",
+          "query_text": "heart",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.025189993903040886
+        },
+        {
+          "query_id": "q6",
+          "query_text": "mind",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.038970005698502064
+        },
+        {
+          "query_id": "q7",
+          "query_text": "time",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.040810019709169865
+        },
+        {
+          "query_id": "q8",
+          "query_text": "world",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.052900006994605064
+        },
+        {
+          "query_id": "q9",
+          "query_text": "fear",
+          "ndcg_at_5": 0.8339912323981488,
+          "mean_query_ms": 0.02484999131411314
+        },
+        {
+          "query_id": "q10",
+          "query_text": "friend",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.024869991466403008
+        }
+      ]
+    },
+    {
+      "config_id": "k1=1.8_b=0.75_balanced",
+      "k1": 1.8,
+      "b": 0.75,
+      "weights": {
+        "quote_body": 1.0,
+        "author": 2.0,
+        "tag": 1.5
+      },
+      "macro_ndcg_at_5": 0.9669439001453789,
+      "macro_mean_query_ms": 0.051467998418956995,
+      "per_query": [
+        {
+          "query_id": "q1",
+          "query_text": "life",
+          "ndcg_at_5": 0.8428282648809379,
+          "mean_query_ms": 0.08503999561071396
+        },
+        {
+          "query_id": "q2",
+          "query_text": "love",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.10279002599418163
+        },
+        {
+          "query_id": "q3",
+          "query_text": "truth",
+          "ndcg_at_5": 0.992619504174702,
+          "mean_query_ms": 0.06324995774775743
+        },
+        {
+          "query_id": "q4",
+          "query_text": "good friends",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.05527001339942217
+        },
+        {
+          "query_id": "q5",
+          "query_text": "heart",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.02855001948773861
+        },
+        {
+          "query_id": "q6",
+          "query_text": "mind",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.03529000096023083
+        },
+        {
+          "query_id": "q7",
+          "query_text": "time",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.0408699968829751
+        },
+        {
+          "query_id": "q8",
+          "query_text": "world",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.050449976697564125
+        },
+        {
+          "query_id": "q9",
+          "query_text": "fear",
+          "ndcg_at_5": 0.8339912323981488,
+          "mean_query_ms": 0.025039981119334698
+        },
+        {
+          "query_id": "q10",
+          "query_text": "friend",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.028130016289651394
+        }
+      ]
+    },
+    {
+      "config_id": "k1=1.5_b=0.75_balanced",
+      "k1": 1.5,
+      "b": 0.75,
+      "weights": {
+        "quote_body": 1.0,
+        "author": 2.0,
+        "tag": 1.5
+      },
+      "macro_ndcg_at_5": 0.9669439001453789,
+      "macro_mean_query_ms": 0.09898700751364231,
+      "per_query": [
+        {
+          "query_id": "q1",
+          "query_text": "life",
+          "ndcg_at_5": 0.8428282648809379,
+          "mean_query_ms": 0.1303400145843625
+        },
+        {
+          "query_id": "q2",
+          "query_text": "love",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.5306700244545937
+        },
+        {
+          "query_id": "q3",
+          "query_text": "truth",
+          "ndcg_at_5": 0.992619504174702,
+          "mean_query_ms": 0.05959998816251755
+        },
+        {
+          "query_id": "q4",
+          "query_text": "good friends",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.05443999543786049
+        },
+        {
+          "query_id": "q5",
+          "query_text": "heart",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.025450019165873528
+        },
+        {
+          "query_id": "q6",
+          "query_text": "mind",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.0421800184994936
+        },
+        {
+          "query_id": "q7",
+          "query_text": "time",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.04422999918460846
+        },
+        {
+          "query_id": "q8",
+          "query_text": "world",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.051039992831647396
+        },
+        {
+          "query_id": "q9",
+          "query_text": "fear",
+          "ndcg_at_5": 0.8339912323981488,
+          "mean_query_ms": 0.02572003286331892
+        },
+        {
+          "query_id": "q10",
+          "query_text": "friend",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.026199989952147007
+        }
+      ]
+    },
+    {
+      "config_id": "k1=1.5_b=0.75_body_heavy",
+      "k1": 1.5,
+      "b": 0.75,
+      "weights": {
+        "quote_body": 1.5,
+        "author": 2.0,
+        "tag": 1.0
+      },
+      "macro_ndcg_at_5": 0.9578422165067285,
+      "macro_mean_query_ms": 0.05152598721906543,
+      "per_query": [
+        {
+          "query_id": "q1",
+          "query_text": "life",
+          "ndcg_at_5": 0.7591919243197319,
+          "mean_query_ms": 0.09827993344515562
+        },
+        {
+          "query_id": "q2",
+          "query_text": "love",
+          "ndcg_at_5": 0.992619504174702,
+          "mean_query_ms": 0.10208999738097191
+        },
+        {
+          "query_id": "q3",
+          "query_text": "truth",
+          "ndcg_at_5": 0.992619504174702,
+          "mean_query_ms": 0.055289966985583305
+        },
+        {
+          "query_id": "q4",
+          "query_text": "good friends",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.04492998123168945
+        },
+        {
+          "query_id": "q5",
+          "query_text": "heart",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.028190016746520996
+        },
+        {
+          "query_id": "q6",
+          "query_text": "mind",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.03569996915757656
+        },
+        {
+          "query_id": "q7",
+          "query_text": "time",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.047149951569736004
+        },
+        {
+          "query_id": "q8",
+          "query_text": "world",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.05054003559052944
+        },
+        {
+          "query_id": "q9",
+          "query_text": "fear",
+          "ndcg_at_5": 0.8339912323981488,
+          "mean_query_ms": 0.028140004724264145
+        },
+        {
+          "query_id": "q10",
+          "query_text": "friend",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.024950015358626842
+        }
+      ]
+    },
+    {
+      "config_id": "k1=1.2_b=0.75_body_heavy",
+      "k1": 1.2,
+      "b": 0.75,
+      "weights": {
+        "quote_body": 1.5,
+        "author": 2.0,
+        "tag": 1.0
+      },
+      "macro_ndcg_at_5": 0.9578422165067285,
+      "macro_mean_query_ms": 0.05939302034676075,
+      "per_query": [
+        {
+          "query_id": "q1",
+          "query_text": "life",
+          "ndcg_at_5": 0.7591919243197319,
+          "mean_query_ms": 0.08544004522264004
+        },
+        {
+          "query_id": "q2",
+          "query_text": "love",
+          "ndcg_at_5": 0.992619504174702,
+          "mean_query_ms": 0.10096000041812658
+        },
+        {
+          "query_id": "q3",
+          "query_text": "truth",
+          "ndcg_at_5": 0.992619504174702,
+          "mean_query_ms": 0.05525003653019667
+        },
+        {
+          "query_id": "q4",
+          "query_text": "good friends",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.08789002895355225
+        },
+        {
+          "query_id": "q5",
+          "query_text": "heart",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.03775004297494888
+        },
+        {
+          "query_id": "q6",
+          "query_text": "mind",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.06182000506669283
+        },
+        {
+          "query_id": "q7",
+          "query_text": "time",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.059160031378269196
+        },
+        {
+          "query_id": "q8",
+          "query_text": "world",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.05488998722285032
+        },
+        {
+          "query_id": "q9",
+          "query_text": "fear",
+          "ndcg_at_5": 0.8339912323981488,
+          "mean_query_ms": 0.025039981119334698
+        },
+        {
+          "query_id": "q10",
+          "query_text": "friend",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.025730044580996037
+        }
+      ]
+    },
+    {
+      "config_id": "k1=2.0_b=0.75_body_heavy",
+      "k1": 2.0,
+      "b": 0.75,
+      "weights": {
+        "quote_body": 1.5,
+        "author": 2.0,
+        "tag": 1.0
+      },
+      "macro_ndcg_at_5": 0.9578422165067285,
+      "macro_mean_query_ms": 0.06948498543351889,
+      "per_query": [
+        {
+          "query_id": "q1",
+          "query_text": "life",
+          "ndcg_at_5": 0.7591919243197319,
+          "mean_query_ms": 0.0837299507111311
+        },
+        {
+          "query_id": "q2",
+          "query_text": "love",
+          "ndcg_at_5": 0.992619504174702,
+          "mean_query_ms": 0.21458999253809452
+        },
+        {
+          "query_id": "q3",
+          "query_text": "truth",
+          "ndcg_at_5": 0.992619504174702,
+          "mean_query_ms": 0.07998996879905462
+        },
+        {
+          "query_id": "q4",
+          "query_text": "good friends",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.051739998161792755
+        },
+        {
+          "query_id": "q5",
+          "query_text": "heart",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.026240013539791107
+        },
+        {
+          "query_id": "q6",
+          "query_text": "mind",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.04438995383679867
+        },
+        {
+          "query_id": "q7",
+          "query_text": "time",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.0565200112760067
+        },
+        {
+          "query_id": "q8",
+          "query_text": "world",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.07912996225059032
+        },
+        {
+          "query_id": "q9",
+          "query_text": "fear",
+          "ndcg_at_5": 0.8339912323981488,
+          "mean_query_ms": 0.03347999881953001
+        },
+        {
+          "query_id": "q10",
+          "query_text": "friend",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.025040004402399063
+        }
+      ]
+    },
+    {
+      "config_id": "k1=1.8_b=0.75_body_heavy",
+      "k1": 1.8,
+      "b": 0.75,
+      "weights": {
+        "quote_body": 1.5,
+        "author": 2.0,
+        "tag": 1.0
+      },
+      "macro_ndcg_at_5": 0.9578422165067285,
+      "macro_mean_query_ms": 0.08730200817808509,
+      "per_query": [
+        {
+          "query_id": "q1",
+          "query_text": "life",
+          "ndcg_at_5": 0.7591919243197319,
+          "mean_query_ms": 0.1306700287386775
+        },
+        {
+          "query_id": "q2",
+          "query_text": "love",
+          "ndcg_at_5": 0.992619504174702,
+          "mean_query_ms": 0.317469984292984
+        },
+        {
+          "query_id": "q3",
+          "query_text": "truth",
+          "ndcg_at_5": 0.992619504174702,
+          "mean_query_ms": 0.09781005792319775
+        },
+        {
+          "query_id": "q4",
+          "query_text": "good friends",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.07887999527156353
+        },
+        {
+          "query_id": "q5",
+          "query_text": "heart",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.0502200098708272
+        },
+        {
+          "query_id": "q6",
+          "query_text": "mind",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.04944994580000639
+        },
+        {
+          "query_id": "q7",
+          "query_text": "time",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.04433004651218653
+        },
+        {
+          "query_id": "q8",
+          "query_text": "world",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.05427999421954155
+        },
+        {
+          "query_id": "q9",
+          "query_text": "fear",
+          "ndcg_at_5": 0.8339912323981488,
+          "mean_query_ms": 0.02502002753317356
+        },
+        {
+          "query_id": "q10",
+          "query_text": "friend",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.024889991618692875
+        }
+      ]
+    },
+    {
+      "config_id": "k1=1.8_b=0.9_body_heavy",
+      "k1": 1.8,
+      "b": 0.9,
+      "weights": {
+        "quote_body": 1.5,
+        "author": 2.0,
+        "tag": 1.0
+      },
+      "macro_ndcg_at_5": 0.945801812722715,
+      "macro_mean_query_ms": 0.05702697904780507,
+      "per_query": [
+        {
+          "query_id": "q1",
+          "query_text": "life",
+          "ndcg_at_5": 0.6806060567602009,
+          "mean_query_ms": 0.08584000170230865
+        },
+        {
+          "query_id": "q2",
+          "query_text": "love",
+          "ndcg_at_5": 0.992619504174702,
+          "mean_query_ms": 0.10308995842933655
+        },
+        {
+          "query_id": "q3",
+          "query_text": "truth",
+          "ndcg_at_5": 0.9508013338940989,
+          "mean_query_ms": 0.056089949794113636
+        },
+        {
+          "query_id": "q4",
+          "query_text": "good friends",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.04595997743308544
+        },
+        {
+          "query_id": "q5",
+          "query_text": "heart",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.04579001106321812
+        },
+        {
+          "query_id": "q6",
+          "query_text": "mind",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.06339999381452799
+        },
+        {
+          "query_id": "q7",
+          "query_text": "time",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.05877995863556862
+        },
+        {
+          "query_id": "q8",
+          "query_text": "world",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.05433994811028242
+        },
+        {
+          "query_id": "q9",
+          "query_text": "fear",
+          "ndcg_at_5": 0.8339912323981488,
+          "mean_query_ms": 0.030509987846016884
+        },
+        {
+          "query_id": "q10",
+          "query_text": "friend",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.0264700036495924
+        }
+      ]
+    },
+    {
+      "config_id": "k1=2.0_b=0.9_body_heavy",
+      "k1": 2.0,
+      "b": 0.9,
+      "weights": {
+        "quote_body": 1.5,
+        "author": 2.0,
+        "tag": 1.0
+      },
+      "macro_ndcg_at_5": 0.945801812722715,
+      "macro_mean_query_ms": 0.06825700402259827,
+      "per_query": [
+        {
+          "query_id": "q1",
+          "query_text": "life",
+          "ndcg_at_5": 0.6806060567602009,
+          "mean_query_ms": 0.08427000138908625
+        },
+        {
+          "query_id": "q2",
+          "query_text": "love",
+          "ndcg_at_5": 0.992619504174702,
+          "mean_query_ms": 0.14225996565073729
+        },
+        {
+          "query_id": "q3",
+          "query_text": "truth",
+          "ndcg_at_5": 0.9508013338940989,
+          "mean_query_ms": 0.08353996090590954
+        },
+        {
+          "query_id": "q4",
+          "query_text": "good friends",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.07344000041484833
+        },
+        {
+          "query_id": "q5",
+          "query_text": "heart",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.030430033802986145
+        },
+        {
+          "query_id": "q6",
+          "query_text": "mind",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.04050000570714474
+        },
+        {
+          "query_id": "q7",
+          "query_text": "time",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.049990019761025906
+        },
+        {
+          "query_id": "q8",
+          "query_text": "world",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.05113999359309673
+        },
+        {
+          "query_id": "q9",
+          "query_text": "fear",
+          "ndcg_at_5": 0.8339912323981488,
+          "mean_query_ms": 0.05449005402624607
+        },
+        {
+          "query_id": "q10",
+          "query_text": "friend",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.07251000497490168
+        }
+      ]
+    },
+    {
+      "config_id": "k1=1.2_b=0.9_body_heavy",
+      "k1": 1.2,
+      "b": 0.9,
+      "weights": {
+        "quote_body": 1.5,
+        "author": 2.0,
+        "tag": 1.0
+      },
+      "macro_ndcg_at_5": 0.945801812722715,
+      "macro_mean_query_ms": 0.07592201000079513,
+      "per_query": [
+        {
+          "query_id": "q1",
+          "query_text": "life",
+          "ndcg_at_5": 0.6806060567602009,
+          "mean_query_ms": 0.09232999291270971
+        },
+        {
+          "query_id": "q2",
+          "query_text": "love",
+          "ndcg_at_5": 0.992619504174702,
+          "mean_query_ms": 0.1390199875459075
+        },
+        {
+          "query_id": "q3",
+          "query_text": "truth",
+          "ndcg_at_5": 0.9508013338940989,
+          "mean_query_ms": 0.0963900238275528
+        },
+        {
+          "query_id": "q4",
+          "query_text": "good friends",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.09373007342219353
+        },
+        {
+          "query_id": "q5",
+          "query_text": "heart",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.04331998061388731
+        },
+        {
+          "query_id": "q6",
+          "query_text": "mind",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.040360004641115665
+        },
+        {
+          "query_id": "q7",
+          "query_text": "time",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.041350023820996284
+        },
+        {
+          "query_id": "q8",
+          "query_text": "world",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.11518001556396484
+        },
+        {
+          "query_id": "q9",
+          "query_text": "fear",
+          "ndcg_at_5": 0.8339912323981488,
+          "mean_query_ms": 0.05311998538672924
+        },
+        {
+          "query_id": "q10",
+          "query_text": "friend",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.04442001227289438
+        }
+      ]
+    },
+    {
+      "config_id": "k1=1.5_b=0.9_body_heavy",
+      "k1": 1.5,
+      "b": 0.9,
+      "weights": {
+        "quote_body": 1.5,
+        "author": 2.0,
+        "tag": 1.0
+      },
+      "macro_ndcg_at_5": 0.945801812722715,
+      "macro_mean_query_ms": 0.08578200126066804,
+      "per_query": [
+        {
+          "query_id": "q1",
+          "query_text": "life",
+          "ndcg_at_5": 0.6806060567602009,
+          "mean_query_ms": 0.14045003335922956
+        },
+        {
+          "query_id": "q2",
+          "query_text": "love",
+          "ndcg_at_5": 0.992619504174702,
+          "mean_query_ms": 0.22859005257487297
+        },
+        {
+          "query_id": "q3",
+          "query_text": "truth",
+          "ndcg_at_5": 0.9508013338940989,
+          "mean_query_ms": 0.10882997885346413
+        },
+        {
+          "query_id": "q4",
+          "query_text": "good friends",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.05082001443952322
+        },
+        {
+          "query_id": "q5",
+          "query_text": "heart",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.025079981423914433
+        },
+        {
+          "query_id": "q6",
+          "query_text": "mind",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.0489500118419528
+        },
+        {
+          "query_id": "q7",
+          "query_text": "time",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.056039984337985516
+        },
+        {
+          "query_id": "q8",
+          "query_text": "world",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.1139399828389287
+        },
+        {
+          "query_id": "q9",
+          "query_text": "fear",
+          "ndcg_at_5": 0.8339912323981488,
+          "mean_query_ms": 0.039309985004365444
+        },
+        {
+          "query_id": "q10",
+          "query_text": "friend",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.04580998793244362
+        }
+      ]
+    },
+    {
+      "config_id": "k1=1.2_b=0.5_body_heavy",
+      "k1": 1.2,
+      "b": 0.5,
+      "weights": {
+        "quote_body": 1.5,
+        "author": 2.0,
+        "tag": 1.0
+      },
+      "macro_ndcg_at_5": 0.9416584749752229,
+      "macro_mean_query_ms": 0.06203199736773968,
+      "per_query": [
+        {
+          "query_id": "q1",
+          "query_text": "life",
+          "ndcg_at_5": 0.7591919243197319,
+          "mean_query_ms": 0.12103000190109015
+        },
+        {
+          "query_id": "q2",
+          "query_text": "love",
+          "ndcg_at_5": 0.992619504174702,
+          "mean_query_ms": 0.15186998061835766
+        },
+        {
+          "query_id": "q3",
+          "query_text": "truth",
+          "ndcg_at_5": 0.9879538239787089,
+          "mean_query_ms": 0.06527001969516277
+        },
+        {
+          "query_id": "q4",
+          "query_text": "good friends",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.06831998471170664
+        },
+        {
+          "query_id": "q5",
+          "query_text": "heart",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.025080027990043163
+        },
+        {
+          "query_id": "q6",
+          "query_text": "mind",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.03868001513183117
+        },
+        {
+          "query_id": "q7",
+          "query_text": "time",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.040659960359334946
+        },
+        {
+          "query_id": "q8",
+          "query_text": "world",
+          "ndcg_at_5": 0.8428282648809379,
+          "mean_query_ms": 0.055169989354908466
+        },
+        {
+          "query_id": "q9",
+          "query_text": "fear",
+          "ndcg_at_5": 0.8339912323981488,
+          "mean_query_ms": 0.02482000272721052
+        },
+        {
+          "query_id": "q10",
+          "query_text": "friend",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.029419991187751293
+        }
+      ]
+    },
+    {
+      "config_id": "k1=1.5_b=0.5_body_heavy",
+      "k1": 1.5,
+      "b": 0.5,
+      "weights": {
+        "quote_body": 1.5,
+        "author": 2.0,
+        "tag": 1.0
+      },
+      "macro_ndcg_at_5": 0.9416584749752229,
+      "macro_mean_query_ms": 0.06484299898147583,
+      "per_query": [
+        {
+          "query_id": "q1",
+          "query_text": "life",
+          "ndcg_at_5": 0.7591919243197319,
+          "mean_query_ms": 0.12368997558951378
+        },
+        {
+          "query_id": "q2",
+          "query_text": "love",
+          "ndcg_at_5": 0.992619504174702,
+          "mean_query_ms": 0.14599997084587812
+        },
+        {
+          "query_id": "q3",
+          "query_text": "truth",
+          "ndcg_at_5": 0.9879538239787089,
+          "mean_query_ms": 0.08122001308947802
+        },
+        {
+          "query_id": "q4",
+          "query_text": "good friends",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.07553002797067165
+        },
+        {
+          "query_id": "q5",
+          "query_text": "heart",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.029659993015229702
+        },
+        {
+          "query_id": "q6",
+          "query_text": "mind",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.03735001664608717
+        },
+        {
+          "query_id": "q7",
+          "query_text": "time",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.04978002980351448
+        },
+        {
+          "query_id": "q8",
+          "query_text": "world",
+          "ndcg_at_5": 0.8428282648809379,
+          "mean_query_ms": 0.05075999069958925
+        },
+        {
+          "query_id": "q9",
+          "query_text": "fear",
+          "ndcg_at_5": 0.8339912323981488,
+          "mean_query_ms": 0.02652995754033327
+        },
+        {
+          "query_id": "q10",
+          "query_text": "friend",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.027910014614462852
+        }
+      ]
+    },
+    {
+      "config_id": "k1=2.0_b=0.5_body_heavy",
+      "k1": 2.0,
+      "b": 0.5,
+      "weights": {
+        "quote_body": 1.5,
+        "author": 2.0,
+        "tag": 1.0
+      },
+      "macro_ndcg_at_5": 0.9416584749752229,
+      "macro_mean_query_ms": 0.07031100569292903,
+      "per_query": [
+        {
+          "query_id": "q1",
+          "query_text": "life",
+          "ndcg_at_5": 0.7591919243197319,
+          "mean_query_ms": 0.1455199671909213
+        },
+        {
+          "query_id": "q2",
+          "query_text": "love",
+          "ndcg_at_5": 0.992619504174702,
+          "mean_query_ms": 0.13457001186907291
+        },
+        {
+          "query_id": "q3",
+          "query_text": "truth",
+          "ndcg_at_5": 0.9879538239787089,
+          "mean_query_ms": 0.07180997636169195
+        },
+        {
+          "query_id": "q4",
+          "query_text": "good friends",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.057650054804980755
+        },
+        {
+          "query_id": "q5",
+          "query_text": "heart",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.03606998361647129
+        },
+        {
+          "query_id": "q6",
+          "query_text": "mind",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.04205999430269003
+        },
+        {
+          "query_id": "q7",
+          "query_text": "time",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.05042001139372587
+        },
+        {
+          "query_id": "q8",
+          "query_text": "world",
+          "ndcg_at_5": 0.8428282648809379,
+          "mean_query_ms": 0.07828001398593187
+        },
+        {
+          "query_id": "q9",
+          "query_text": "fear",
+          "ndcg_at_5": 0.8339912323981488,
+          "mean_query_ms": 0.03136005252599716
+        },
+        {
+          "query_id": "q10",
+          "query_text": "friend",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.05536999087780714
+        }
+      ]
+    },
+    {
+      "config_id": "k1=1.8_b=0.5_body_heavy",
+      "k1": 1.8,
+      "b": 0.5,
+      "weights": {
+        "quote_body": 1.5,
+        "author": 2.0,
+        "tag": 1.0
+      },
+      "macro_ndcg_at_5": 0.9416584749752229,
+      "macro_mean_query_ms": 0.12141899904236197,
+      "per_query": [
+        {
+          "query_id": "q1",
+          "query_text": "life",
+          "ndcg_at_5": 0.7591919243197319,
+          "mean_query_ms": 0.32181001733988523
+        },
+        {
+          "query_id": "q2",
+          "query_text": "love",
+          "ndcg_at_5": 0.992619504174702,
+          "mean_query_ms": 0.29775998555123806
+        },
+        {
+          "query_id": "q3",
+          "query_text": "truth",
+          "ndcg_at_5": 0.9879538239787089,
+          "mean_query_ms": 0.13460998889058828
+        },
+        {
+          "query_id": "q4",
+          "query_text": "good friends",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.07603999692946672
+        },
+        {
+          "query_id": "q5",
+          "query_text": "heart",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.036680023185908794
+        },
+        {
+          "query_id": "q6",
+          "query_text": "mind",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.09227998089045286
+        },
+        {
+          "query_id": "q7",
+          "query_text": "time",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.07481002248823643
+        },
+        {
+          "query_id": "q8",
+          "query_text": "world",
+          "ndcg_at_5": 0.8428282648809379,
+          "mean_query_ms": 0.08796998299658298
+        },
+        {
+          "query_id": "q9",
+          "query_text": "fear",
+          "ndcg_at_5": 0.8339912323981488,
+          "mean_query_ms": 0.05256999284029007
+        },
+        {
+          "query_id": "q10",
+          "query_text": "friend",
+          "ndcg_at_5": 1.0,
+          "mean_query_ms": 0.039659999310970306
+        }
+      ]
+    }
+  ]
+}

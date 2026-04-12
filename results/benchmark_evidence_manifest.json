@@ -1,0 +1,41 @@
+{
+  "snapshot": {
+    "index_built_at": "2026-04-11T22:00:40+00:00",
+    "schema_version": 1,
+    "num_docs": 10,
+    "num_queries": 10,
+    "num_qrels": 26,
+    "labels_per_query": {
+      "q1": 3,
+      "q2": 3,
+      "q3": 3,
+      "q4": 2,
+      "q5": 2,
+      "q6": 3,
+      "q7": 3,
+      "q8": 3,
+      "q9": 2,
+      "q10": 2
+    },
+    "label_distribution": {
+      "0": 0,
+      "1": 6,
+      "2": 10,
+      "3": 10
+    }
+  },
+  "comparison_summary": {
+    "metric": "nDCG@5",
+    "bm25f_result": 1.0,
+    "baseline_result": 0.983544776905564,
+    "delta": 0.016455223094436033
+  },
+  "sha256": {
+    "data/index.json": "40ddf83624a45288de10e017fccf88434ffba7175f307405f5271fa7e8189b48",
+    "results/bm25f_queries.json": "dc0b9727c8abf7fdf6a77cd98ee7e60e11aa723c2723c4c1bb7da5bb5846f080",
+    "results/bm25f_qrels.json": "93daac9d6871b2153a51f55b24f0d4e49d81f74e57a62630bdf021b0afd5108d",
+    "results/bm25f_comparison_results.json": "74e7a155da765afdf2f293931ecffb28b11606182a3df6ece77f5eaaeab4dd2b",
+    "results/bm25f_comparison_table.md": "3aecd7b136ac63ecc80fb6e9dbe70832b1ae6e3d862753fdd981577322470b03",
+    "scripts/run_bm25f_comparison.py": "84640f5c09d4c979011073bedf7bdbdf5871131c4caaadab1a3a3b21a9a609c4"
+  }
+}

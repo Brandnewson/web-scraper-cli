@@ -1,0 +1,11 @@
+{
+  "config_id": "k1=2.0_b=0.75_default",
+  "k1": 2.0,
+  "b": 0.75,
+  "weights": {
+    "quote_body": 1.0,
+    "author": 3.0,
+    "tag": 2.0
+  },
+  "selection_rule": "maximize macro_ndcg_at_5; tie-break on lower macro_mean_query_ms; tie-break on lexicographic config_id"
+}

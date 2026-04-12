@@ -4,7 +4,8 @@ from __future__ import annotations
 
 import math
 
-K1 = 1.5    # BM25 term frequency saturation parameter (see docs/ENGINEERING_RATIONALE.md for details).
+# Tuned via Phase 10 sweep; we keep this explicit so runtime scoring matches benchmark evidence.
+K1 = 2.0
 DEFAULT_MAX_EDIT_DISTANCE = 2
 
 

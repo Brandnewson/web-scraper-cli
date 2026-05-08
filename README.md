@@ -21,6 +21,8 @@ conda activate web-scraper-cli
 pip install -r requirements.txt
 ```
 
+`data/index.json` is generated locally by the `build` command and is listed in `.gitignore`, so the compiled index is not committed to the repository.
+
 ## Usage
 
 Start the CLI:

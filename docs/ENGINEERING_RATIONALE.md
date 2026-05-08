@@ -74,6 +74,10 @@ This file records *why* we chose specific tools, libraries, patterns, and algori
 
 - **Single-term BM25F scorer implemented before full retrieval pipeline**
   - Isolates ranking correctness before introducing merge/routing complexity.
+- **`k1` set to `2.0` following Phase 10 parameter sweep**
+  - See `results/best_bm25f_config.json`.
+  - Initial default was `1.5`; sweep found `k1=2.0` with `b=0.75` maximises
+    `nDCG@5` on the fixed 10-query evaluation set.
 - **All ranking parameters read from index metadata**
   - Keeps scoring behavior data-driven and avoids hidden query-time constants.
 - **Explicit zero-return edge behavior**

@@ -1,8 +1,11 @@
 # GenAI Log
 
+Dates below are repository-evidence dates from `git log`, not original chat timestamps.
+The original AI interaction timestamps were not recorded in this repository.
+
 ## Session 4
 
-Date: 2026-04-11
+Date: 2026-04-11 (repo evidence: initial architecture and implementation commits)
 
 What I asked: Submitted the architecture document to four LLMs (Claude, ChatGPT, DeepSeek, Gemini) and asked each to critique it.
 
@@ -14,7 +17,7 @@ Reflection: Using four models as a critique panel rather than one produced highe
 
 ## Session 5
 
-Date: 2026-04-11
+Date: 2026-04-11 (repo evidence: BM25F scorer commit at 21:02:57 +0100)
 
 What I asked: Implement score_bm25f in search.py following the ARCHITECTURE.md specification. Then write test_bm25f_known_value with a hand-computed expected value to verify correctness.
 
@@ -26,7 +29,7 @@ Reflection: The AI understood the BM25F formula correctly but did not internalis
 
 ## Session 6
 
-Date: 2026-04-12
+Date: 2026-04-12 (repo evidence: parameter sweep/validation scripts commit at 20:54:17 +0100)
 
 What I asked: Run a 48-configuration parameter sweep across k1 in [1.2, 1.5, 1.8, 2.0], b in [0.5, 0.75, 0.9], and four field weight presets. Select the best configuration by macro nDCG@5, then runtime as tie-break.
 
@@ -38,7 +41,7 @@ Reflection: The sweep was generated largely by AI but I evaluated its output rat
 
 ## Session 7
 
-Date: 2026-04-11
+Date: 2026-04-11 (repo evidence: DAAT/skip commits at 21:18:08 and 22:13:52 +0100)
 
 What I asked: Implement daat_and_merge and build_skip_pointers with a synthetic benchmark proving skip-pointer advance is faster than linear scan on 10,000 entries.
 

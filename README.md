@@ -141,3 +141,7 @@ Selected sweep winner:
 - `requests`: performs HTTP requests for crawler page fetching.
 - `pytest`: runs the unit and integration-style test suite.
 - `pytest-cov`: reports line coverage for the `src/` package.
+
+## References and GenAI Declaration
+
+External resources, library references, and declared GenAI tools are recorded in `REFERENCES.md`.

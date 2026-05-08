@@ -6,6 +6,33 @@ documented in ARCHITECTURE.md.
 
 ---
 
+## External Resources and GenAI Declaration
+
+### External resources and libraries
+
+- `quotes.toscrape.com`: target coursework website and corpus.
+- `requests` documentation: used for HTTP request handling and timeout behavior.
+- `beautifulsoup4` documentation: used for HTML parsing and CSS selector extraction.
+- `pytest` documentation: used for the test suite and fixtures.
+- `pytest-cov` documentation: used for coverage reporting.
+- Manning, Raghavan, and Schuetze, *Introduction to Information Retrieval*: used for
+  inverted index, posting list, DAAT, and skip pointer background.
+- Robertson and Zaragoza BM25/BM25F material: used for ranking formula design and
+  comparison against TF-IDF/BM25 baselines.
+
+### GenAI tools declared
+
+- ChatGPT: architecture review, implementation planning, debugging, and documentation
+  drafting support.
+- Claude: architecture critique, explanation refinement, and video-script planning.
+- DeepSeek: independent architecture critique and alternative design review.
+- Kimi: independent architecture critique and alternative design review.
+
+GenAI output was not accepted uncritically. Decisions adopted from model suggestions
+were checked against the coursework brief, repository tests, and IR references.
+
+---
+
 ## 1. BM25 and BM25F
 
 ### BM25 origin
